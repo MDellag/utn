@@ -1,0 +1,47 @@
+<div class="btn-group gp" role="group" aria-label="Basic example">
+  <button
+    type="button"
+    class="btn btn-primary"
+    (click)="getCountries('europe')"
+  >
+    Europa
+  </button>
+  <button
+    type="button"
+    class="btn btn-primary"
+    (click)="getCountries('africa')"
+  >
+    Africa
+  </button>
+</div>
+
+<!-- prettier-ignore -->
+<div class="countriesbtns">
+
+  <div *ngFor="let countr of countryList" class="btnPaises">
+    <input
+      type="radio"
+      class="btn-check"
+      name="btnradio"
+      id="{{ countr.name.common }}"
+      autocomplete="off"
+      (change)="emitPais(countr.name.common)"
+    />
+    
+    <label class="btn btn-outline-primary" for="{{ countr.name.common }}"> <img [src]="countr.flags.svg" alt="flag" />{{
+      countr.name.common
+    }}</label>
+  </div>
+</div>
+<br />
+
+<div class="d-flex justify-content-center">
+  <div
+    class="spinner-border text-success"
+    style="width: 3rem; height: 3rem"
+    role="status"
+    *ngIf="fetching"
+  >
+    <span class="visually-hidden">Loading...</span>
+  </div>
+</div>

@@ -1,0 +1,11 @@
+<div class="card" style="width: 18rem" *ngIf="pais">
+  <img [src]="pais.flags.svg" class="card-img-top" alt="..." />
+  <div class="card-body">
+    <h4 class="card-title">{{ pais.name.common }}</h4>
+    <h5 class="card-title">{{ pais.capital }}</h5>
+    <p class="card-text">
+      {{ pais.name.official }} -- Timezone: {{ pais.timezones }} -- Moneda:
+      {{ pais.currencies.RSD.name }}
+    </p>
+  </div>
+</div>

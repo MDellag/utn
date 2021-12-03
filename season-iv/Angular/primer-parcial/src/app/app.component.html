@@ -1,0 +1,38 @@
+<!-- Toolbar -->
+<div class="toolbar divnav" role="banner">
+  <img src="assets//pizza.png" alt="" class="imgsize" />
+  <a aria-label="Angular on YouTube" rel="noopener" [routerLink]="['/']">
+    Bienvenido
+  </a>
+  <div class="spacer"></div>
+  <div class="links">
+    <a
+      aria-label="Angular on twitter"
+      rel="noopener"
+      [routerLink]="['/pizzas']"
+    >
+      Pizzas
+    </a>
+    <a
+      aria-label="Angular on twitter"
+      rel="noopener"
+      [routerLink]="['/detalles-repartidor']"
+    >
+      Detalles Repartidor
+    </a>
+    <a
+      aria-label="Angular on twitter"
+      rel="noopener"
+      [routerLink]="['/altas-repartidor']"
+    >
+      Altas Repartidor
+    </a>
+    <a aria-label="Angular on YouTube" rel="noopener" [routerLink]="['/login']">
+      Login
+    </a>
+  </div>
+</div>
+
+<div class="body-app">
+  <router-outlet></router-outlet>
+</div>

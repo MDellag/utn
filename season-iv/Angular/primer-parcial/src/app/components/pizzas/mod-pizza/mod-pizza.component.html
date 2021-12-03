@@ -1,0 +1,56 @@
+<div class="card mb-4 rounded-3 shadow-sm">
+  <div class="card-header py-3">
+    <h4 class="my-0 fw-normal">Modificar Pizza</h4>
+  </div>
+  <div class="card-body">
+    <div class="input-group mb-3">
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Nombre"
+        aria-label="Username"
+        [(ngModel)]="pizza.nombre"
+        readonly
+      />
+    </div>
+    <div class="input-group mb-3">
+      <span class="input-group-text">$</span>
+      <input
+        type="number"
+        class="form-control"
+        placeholder="precio"
+        aria-label="Amount (to the nearest dollar)"
+        [(ngModel)]="pizza.precio"
+      />
+      <span class="input-group-text">.00</span>
+    </div>
+    <ul class="list-unstyled mt-3 mb-4">
+      <div class="input-group mb-3">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Ingredientes"
+          aria-label="Username"
+          [(ngModel)]="pizza.ingredientes"
+        />
+      </div>
+      <div class="input-group mb-3">
+        <select
+          class="form-select"
+          aria-label="Default select example"
+          [(ngModel)]="pizza.peso"
+        >
+          <option value="500">500g</option>
+          <option value="1000">1000g</option>
+        </select>
+      </div>
+    </ul>
+    <button
+      type="button"
+      class="w-100 btn btn-lg btn-primary"
+      (click)="updatePizza()"
+    >
+      Modificar
+    </button>
+  </div>
+</div>

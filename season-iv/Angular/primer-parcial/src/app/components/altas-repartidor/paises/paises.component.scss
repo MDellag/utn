@@ -1,0 +1,45 @@
+.countriesbtns {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  flex-wrap: wrap;
+  width: 100%;
+  button {
+    display: inline;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+    width: 250px;
+    height: 75px;
+  }
+  input {
+    display: inline;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+    width: 250px;
+    height: 75px;
+  }
+
+  img {
+    width: 80px;
+    height: 50px;
+  }
+}
+
+.btnPaises {
+  margin: 10px;
+}
+
+.gp {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  button {
+    margin: 10px;
+    max-width: 100px;
+  }
+}

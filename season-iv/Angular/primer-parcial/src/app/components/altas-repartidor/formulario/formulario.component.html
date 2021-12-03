@@ -1,0 +1,127 @@
+<form
+  class="row g-3 frm needs-validation"
+  [formGroup]="altasForm"
+  (ngSubmit)="onSubmit($event)"
+>
+  <div class="col-md-4">
+    <label for="validationDefault01" class="form-label">dni</label>
+    <input
+      type="number"
+      class="form-control"
+      id="validationCustom01"
+      value="39383583"
+      formControlName="dni"
+      required
+    />
+    <p
+      class="help-error"
+      *ngIf="
+        altasForm.controls.dni.status === 'INVALID' &&
+        altasForm.controls.dni.dirty
+      "
+    >
+      dni invalido
+    </p>
+  </div>
+  <div class="col-md-4">
+    <label for="validationDefault02" class="form-label">nombre</label>
+    <input
+      type="text"
+      class="form-control"
+      id="validationDefault02"
+      value="Otto"
+      formControlName="nombre"
+      required
+    />
+    <p
+      class="help-error"
+      *ngIf="
+        altasForm.controls.nombre.status === 'INVALID' &&
+        altasForm.controls.nombre.dirty
+      "
+    >
+      nombre invalido
+    </p>
+  </div>
+  <div class="col-md-4">
+    <label for="validationDefaultUsername" class="form-label">edad</label>
+
+    <input
+      type="number"
+      class="form-control"
+      id="validationDefaultUsername"
+      aria-describedby="inputGroupPrepend2"
+      formControlName="edad"
+      required
+    />
+
+    <p
+      class="help-error"
+      *ngIf="
+        altasForm.controls.edad.status === 'INVALID' &&
+        altasForm.controls.edad.dirty
+      "
+    >
+      edad invalida
+    </p>
+  </div>
+  <div class="col-md-6">
+    <label for="validationDefault03" class="form-label">capacidad</label>
+    <input
+      type="number"
+      class="form-control"
+      id="validationDefault03"
+      formControlName="capacidad"
+      required
+    />
+    <p
+      class="help-error"
+      *ngIf="
+        altasForm.controls.capacidad.status === 'INVALID' &&
+        altasForm.controls.capacidad.dirty
+      "
+    >
+      capacidad invalida
+    </p>
+  </div>
+  <div class="col-md-3">
+    <label for="validationDefault04" class="form-label">Pais de origen</label>
+
+    <input
+      type="text"
+      class="form-control"
+      id="validationDefault03"
+      formControlName="paisOrigen"
+      required
+    />
+    <p
+      class="help-error"
+      *ngIf="
+        altasForm.controls.paisOrigen.status === 'INVALID' &&
+        altasForm.controls.paisOrigen.dirty
+      "
+    >
+      pais de origen invalido
+    </p>
+  </div>
+
+  <div class="col-12">
+    <div class="form-check">
+      <input
+        class="form-check-input"
+        type="checkbox"
+        value=""
+        id="invalidCheck2"
+        [(ngModel)]="unidadPropia"
+        [ngModelOptions]="{ standalone: true }"
+        required
+      />
+      <label class="form-check-label" for="invalidCheck2">
+        Unidad Propia
+      </label>
+    </div>
+  </div>
+  <div class="col-12">
+    <button class="btn btn-primary" type="submit">Dar de Alta</button>
+  </div>
+</form>

@@ -1,0 +1,103 @@
+<body class="text-center">
+  <br />
+  <br />
+
+  <div
+    class="btn-group"
+    role="group"
+    aria-label="Basic radio toggle button group"
+  >
+    <input
+      type="radio"
+      class="btn-check"
+      name="btnradio"
+      id="btnradio1"
+      autocomplete="off"
+      (change)="handleCred('admin')"
+    />
+    <label class="btn btn-outline-primary" for="btnradio1">Admin</label>
+
+    <input
+      type="radio"
+      class="btn-check"
+      name="btnradio"
+      id="btnradio2"
+      autocomplete="off"
+      (change)="handleCred('empleado')"
+    />
+    <label class="btn btn-outline-primary" for="btnradio2">Empleado</label>
+  </div>
+  <br />
+  <br />
+  <br />
+  <main class="form-signin frm">
+    <form>
+      <!-- <img
+        class="mb-4"
+        src="./Signin Template · Bootstrap v5.1_files/bootstrap-logo.svg"
+        alt=""
+        width="72"
+        height="57"
+      /> -->
+      <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+
+      <div class="form-floating">
+        <input
+          type="email"
+          class="form-control"
+          id="floatingInput"
+          placeholder="name@example.com"
+          [(ngModel)]="cred.email"
+          [ngModelOptions]="{ standalone: true }"
+        />
+        <label for="floatingInput">Email address</label>
+      </div>
+      <div class="form-floating">
+        <input
+          type="password"
+          class="form-control"
+          id="floatingPassword"
+          placeholder="Password"
+          [(ngModel)]="cred.password"
+          [ngModelOptions]="{ standalone: true }"
+        />
+        <label for="floatingPassword">Password</label>
+      </div>
+
+      <div class="checkbox mb-3">
+        <!-- <label>
+          <input type="checkbox" value="remember-me" /> Remember me
+        </label> -->
+      </div>
+      <button
+        class="w-100 btn btn-lg btn-primary"
+        type="button"
+        (click)="login()"
+      >
+        Sign in
+      </button>
+      <p class="mt-5 mb-3 text-muted">© 2017–2021</p>
+    </form>
+
+    <div *ngIf="loggedIn">
+      <h1 class="h3 mb-3 fw-normal">Usted se encuentra logeado</h1>
+      <button
+        class="w-100 btn btn-lg btn-danger"
+        type="button"
+        (click)="logout()"
+      >
+        Deslogearse
+      </button>
+    </div>
+  </main>
+  <br />
+  <br />
+  <div
+    class="spinner-grow text-success"
+    role="status"
+    *ngIf="spinner"
+    style="width: 4rem; height: 4rem"
+  >
+    <span class="visually-hidden">Loading...</span>
+  </div>
+</body>

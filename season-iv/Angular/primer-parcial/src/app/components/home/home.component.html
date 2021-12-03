@@ -1,0 +1,77 @@
+<div class="jumbotron">
+  <div class="container">
+    <div class="container-fluid">
+      <div class="mt-3">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="card">
+              <img
+                [src]="githubProfile.avatar_url"
+                alt=""
+                class="rounded-circle img-fluid"
+              />
+              <div class="card-body">
+                <h4 class="card-title">{{ githubProfile.login }}</h4>
+                <p class="card-text">{{ githubProfile.bio }}</p>
+                <a
+                  [href]="githubProfile.html_url"
+                  target="_blank"
+                  class="btn btn-danger btn-sm btnCenter"
+                  >Ir a Perfil</a
+                >
+                <div class="card txt marg">
+                  <span class="badge badge-primary mr-3"
+                    >{{ githubProfile.followers }} Seguidores</span
+                  >
+                  <span class="badge badge-success mr-3"
+                    >{{ githubProfile.public_repos }} Repositorios</span
+                  >
+
+                  <span class="badge badge-danger mr-3"
+                    >{{ githubProfile.following }} Siguiendo</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-8 align-self-center">
+            <div class="card">
+              <div class="card-body">
+                <ul class="list-group">
+                  <li class="list-group-item">
+                    Nombre de Usuario:
+                    <span class="font-weigh-bold">
+                      <b>{{ githubProfile.login }}</b></span
+                    >
+                  </li>
+                  <li class="list-group-item">
+                    Localidad: <b>{{ githubProfile.location }}</b>
+                  </li>
+
+                  <li class="list-group-item">
+                    Fecha Creacion: <b>{{ githubProfile.created_at }}</b>
+                  </li>
+                  <li class="list-group-item">
+                    Ultima Actualizacion:
+                    <b>{{ githubProfile.updated_at }}</b>
+                  </li>
+                  <li class="list-group-item">
+                    Perfil: <b>{{ githubProfile.html_url }}</b>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<hr />
+<footer class="container container-footer card-body">
+  <p class="float-right"><a href="#">volver</a></p>
+  <p>
+    &copy; 2021. &middot;
+    <a href="#">Privacy</a> &middot; <a href="#">Terms</a>
+  </p>
+</footer>

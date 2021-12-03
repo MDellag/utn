@@ -1,0 +1,20 @@
+body {
+  min-height: 100vh;
+}
+
+.container-footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.txt {
+  span {
+    color: #1f1f1f;
+  }
+}
+
+.btnCenter {
+  display: block;
+  margin: auto;
+}
