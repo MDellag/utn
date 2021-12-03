@@ -1,0 +1,53 @@
+<div class="background allwidth supCont">
+    <spinner *ngIf="fetching"></spinner>
+    <div class="countriesbtns">
+        <div class="btnPaises" *ngFor="let user of userList">
+            <input
+                type="radio"
+                class="btn-check"
+                name="btnradio"
+                id="{{ user.name }}"
+                autocomplete="off"
+                (change)="fillInputs(user.name)"
+            />
+
+            <label class="btn btn-outline-primary" for="{{ user.name }}">
+                <img [src]="user.photo" alt="flag" /> {{ user.name }}</label
+            >
+        </div>
+    </div>
+    <form class="shadow" *ngIf="!fetching">
+        <h3>LOGIN</h3>
+        <br />
+        <br />
+        <mat-form-field class="inputField">
+            <mat-label>@email</mat-label>
+            <input matInput type="text" [(ngModel)]="email" name="emailForm" />
+        </mat-form-field>
+
+        <mat-form-field class="inputField">
+            <mat-label>contraseña</mat-label>
+            <input
+                matInput
+                type="password"
+                [(ngModel)]="password"
+                name="passwordForm"
+            />
+        </mat-form-field>
+
+        <div class="buttonsContainer">
+            <button
+                mat-flat-button
+                type="submit"
+                style="
+                    background-color: var(--main-theme-light);
+                    color: var(--main-theme-dark);
+                "
+                (click)="login()"
+            >
+                > Ingresar
+            </button>
+            <a [routerLink]="['/registro']">Registrarse</a>
+        </div>
+    </form>
+</div>

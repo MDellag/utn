@@ -1,0 +1,7 @@
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Clases\TestParcial\bin\Debug\TestParcial.exe.config
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Clases\TestParcial\bin\Debug\TestParcial.exe
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Clases\TestParcial\bin\Debug\TestParcial.pdb
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Clases\TestParcial\obj\Debug\TestParcial.csprojAssemblyReference.cache
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Clases\TestParcial\obj\Debug\TestParcial.csproj.CoreCompileInputs.cache
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Clases\TestParcial\obj\Debug\TestParcial.exe
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Clases\TestParcial\obj\Debug\TestParcial.pdb

@@ -1,0 +1,7 @@
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Clases\Clase_Arrays_Colecciones\bin\Debug\Clase_Arrays_Colecciones.exe.config
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Clases\Clase_Arrays_Colecciones\bin\Debug\Clase_Arrays_Colecciones.exe
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Clases\Clase_Arrays_Colecciones\bin\Debug\Clase_Arrays_Colecciones.pdb
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Clases\Clase_Arrays_Colecciones\obj\Debug\Clase_Arrays_Colecciones.csprojAssemblyReference.cache
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Clases\Clase_Arrays_Colecciones\obj\Debug\Clase_Arrays_Colecciones.csproj.CoreCompileInputs.cache
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Clases\Clase_Arrays_Colecciones\obj\Debug\Clase_Arrays_Colecciones.exe
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Clases\Clase_Arrays_Colecciones\obj\Debug\Clase_Arrays_Colecciones.pdb

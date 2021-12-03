@@ -1,0 +1,203 @@
+<div class="typeUserButtons" *ngIf="!typeUserRegistration">
+    <button
+        class="btn-doctor"
+        (click)="assignTypeUserReg('specialist')"
+    ></button>
+    <button
+        class="btn-paciente"
+        (click)="assignTypeUserReg('patient')"
+    ></button>
+</div>
+
+<div class="background" *ngIf="typeUserRegistration">
+    <spinner *ngIf="fetching"></spinner>
+    <form class="shadow form-custom" *ngIf="!fetching" #form="ngForm">
+        <div class="messageContainer">
+            <h3>
+                REGISTRO
+                {{
+                    typeUserRegistration === 'specialist'
+                        ? 'ESPECIALISTA'
+                        : 'PACIENTE'
+                }}
+            </h3>
+        </div>
+
+        <div class="row">
+            <mat-form-field class="inputField">
+                <mat-label>@email</mat-label>
+                <input
+                    matInput
+                    type="text"
+                    [(ngModel)]="user_data.email"
+                    name="emailForm"
+                    required
+                />
+            </mat-form-field>
+
+            <mat-form-field class="inputField">
+                <mat-label>dni</mat-label>
+                <input
+                    matInput
+                    type="number"
+                    [(ngModel)]="user_data.dni"
+                    name="dniForm"
+                    required
+                />
+            </mat-form-field>
+        </div>
+
+        <div class="row">
+            <mat-form-field class="inputField">
+                <mat-label>nombre</mat-label>
+                <input
+                    matInput
+                    type="text"
+                    [(ngModel)]="user_data.name"
+                    name="nameForm"
+                    required
+                />
+            </mat-form-field>
+
+            <mat-form-field class="inputField">
+                <mat-label>apellido</mat-label>
+                <input
+                    matInput
+                    type="text"
+                    [(ngModel)]="user_data.lastname"
+                    name="lastnameForm"
+                    required
+                />
+            </mat-form-field>
+        </div>
+
+        <div class="row">
+            <mat-form-field class="inputField">
+                <mat-label>password</mat-label>
+                <input
+                    matInput
+                    type="password"
+                    [(ngModel)]="user_data.password"
+                    name="passwordForm"
+                    required
+                />
+            </mat-form-field>
+
+            <mat-form-field class="inputField">
+                <mat-label>confirm password</mat-label>
+                <input
+                    matInput
+                    type="password"
+                    [(ngModel)]="user_data.passwordConfirm"
+                    name="passwordConfirmForm"
+                    required
+                />
+            </mat-form-field>
+        </div>
+
+        <div class="row">
+            <!-- <mat-form-field class="inputField">
+                <mat-label>Tipo de Usuario</mat-label>
+                <mat-select
+                    [(ngModel)]="user_data.typeUser"
+                    [ngModelOptions]="{ standalone: true }"
+                    readonly
+                >
+                    <mat-option value="PATIENT">Paciente</mat-option>
+                    <mat-option value="SPECIALIST">Especialista</mat-option>
+                </mat-select>
+            </mat-form-field> -->
+
+            <mat-form-field
+                class="inputField"
+                *ngIf="user_data.typeUser === 'PATIENT'"
+            >
+                <mat-label>Obra Social</mat-label>
+                <mat-select
+                    [(ngModel)]="user_data.obraSocial"
+                    [ngModelOptions]="{ standalone: true }"
+                    required
+                >
+                    <mat-option
+                        *ngFor="let spec of obrasSociales"
+                        value="{{ spec }}"
+                        >{{ spec }}</mat-option
+                    >
+                </mat-select>
+            </mat-form-field>
+
+            <mat-form-field
+                class="inputField"
+                *ngIf="user_data.typeUser === 'SPECIALIST'"
+            >
+                <mat-label>Especialidad</mat-label>
+                <mat-select
+                    [(ngModel)]="user_data.especialidad"
+                    [ngModelOptions]="{ standalone: true }"
+                    required
+                    multiple
+                >
+                    <mat-option *ngFor="let spec of specs" value="{{ spec }}">{{
+                        spec
+                    }}</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+
+        <mat-form-field
+            class="inputField"
+            *ngIf="
+                user_data.especialidad.includes('Otro') &&
+                user_data.typeUser === 'SPECIALIST'
+            "
+        >
+            <mat-label>Otro</mat-label>
+            <input
+                matInput
+                type="text"
+                [(ngModel)]="user_data.other"
+                name="otherForm"
+                required
+            />
+        </mat-form-field>
+
+        <mat-form-field class="inputField">
+            <ngx-mat-file-input
+                [(ngModel)]="user_data.photo"
+                name="imageForm"
+                [multiple]="user_data.typeUser == 'PATIENT'"
+                accept="image/*"
+                color="accent"
+                class="file-input"
+            >
+            </ngx-mat-file-input>
+        </mat-form-field>
+
+        <re-captcha
+            class="recaptcha"
+            id="recaptcha"
+            name="recaptcha"
+            #recaptcha="ngModel"
+            [(ngModel)]="token"
+            required
+            [class.is-invalid]="
+                recaptcha.invalid && (recaptcha.dirty || recaptcha.touched)
+            "
+        ></re-captcha>
+
+        <div class="buttonsContainer">
+            <button
+                mat-flat-button
+                type="submit"
+                style="
+                    background-color: var(--main-theme-light);
+                    color: var(--main-theme-dark);
+                "
+                (click)="register()"
+            >
+                > Registrar
+            </button>
+            <a [routerLink]="['/login']">Ingresar</a>
+        </div>
+    </form>
+</div>

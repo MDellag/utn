@@ -1,0 +1,21 @@
+<ion-header [translucent]="true">
+    <ion-toolbar>
+        <ion-title> Alarma </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<!-- <div class="content"></div> -->
+<button class="menubtn" mat-mini-fab color="dark" [matMenuTriggerFor]="menu">
+    <mat-icon>menu</mat-icon>
+</button>
+<mat-menu #menu="matMenu">
+    <!-- <button mat-menu-item class="mat-menu-item" (click)="myPhotos()">
+        <mat-icon>photo_library</mat-icon>
+    </button> -->
+    <button mat-menu-item class="mat-menu-item" (click)="logOut()">
+        <mat-icon>exit_to_app</mat-icon>
+    </button>
+</mat-menu>
+<div class="content">
+    <button class="menuBtn lindo" (click)="alarm()">{{buttonName}}</button>
+</div>

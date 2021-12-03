@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 20px;
+        }
+
+        div {
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="2">A</th>
+                    <!-- th es como el td pero en negrita y esta centrado || colspan="2" expande la columna -->
+                    <th colspan="2" column-width=30px>B</th>
+                </tr>
+            </thead>
+            <thead>
+                <tr>
+                    <th colspan="1">C</th>
+                    <!--td esta alineado a la derecha de la columna-->
+                    <th>D</th>
+                    <th colspan="2">E</th>
+                </tr>
+            </thead>
+            <thead>
+                <tr>
+                    <!--cada fila esta definida por tr -->
+                    <th colspan="4">F</th>
+                </tr>
+            </thead>
+            <thead>
+                <tr>
+                    <th>G</th>
+                    <th>H</th>
+                    <th>I</th>
+                    <th>J</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+
+    <div>
+        <table>
+            <tr>
+                <th>A</th>
+                <th>B</th>
+                <th rowspan="3">C</th>
+                <th>D</th>
+            </tr>
+
+            <tr>
+                <th rowspan="2">E</th>
+                <th>F</th>
+                <th rowspan="3">G</th>
+            </tr>
+
+            <tr>
+                <th>H</th>
+            </tr>
+
+            <tr>
+                <th>I</th>
+                <th>J</th>
+                <th>K</th>
+        </table>
+    </div>
+
+    <div>
+        <button onclick= "href='www.twitter.com'">
+           Twitter</button>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+.example-additional-selection {
+    opacity: 0.75;
+    font-size: 0.75em;
+}
+
+.choseContainer {
+    background: #202020;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+}
+
+mat-label {
+    color: #fff;
+}
+
+mat-select-trigger {
+    color: #fff;
+}
+
+button {
+    height: 100px;
+    color: #ffffff;
+    font-size: 250%;
+    font-weight: bold;
+}
+.btn1 {
+    background: #b80d0d;
+}
+.btn2 {
+    background: #9e069e;
+}
+.btn3 {
+    background: #07971a;
+}
+
+.btn4 {
+    background: #c46206;
+}
+
+.btn5 {
+    background: #1704c4;
+}

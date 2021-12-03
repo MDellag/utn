@@ -1,0 +1,41 @@
+<body *ngIf="!showingQr">
+  <div class="heade"><h1>METRE</h1></div>
+
+  <div class="cont">
+    <h3>{{mesaStatus}}</h3>
+    <div class="mesa" style={{styleMesa1}}>
+      <button class="btnm" id="mesa1" (click)="showMesaQr()"></button
+      ><label for="mesa1">MESA 1</label>
+    </div>
+
+  </div>
+
+  <div class="cont">
+    <h3>{{mesaStatus2}}</h3>
+    <div class="mesa" style={{styleMesa2}}>
+      <button class="btnm" id="mesa2" (click)="showMesaQr2()"></button
+      ><label for="mesa2">MESA 2</label>
+    </div>
+  </div>
+  
+  <div class="listPend">
+    <h3 *ngIf="listaPendientes.length == 0">No hay clientes en cola</h3>
+    <li *ngFor="let item of listaPendientes; index as i">
+      <p class="item">{{ i + 1 }}/{{ listaPendientes.length }} - {{ item.name }} - {{item.lastname}} </p>
+    </li>
+  </div>
+</body>
+
+<body *ngIf="showingQr" style="background-color: #dd3f0f">
+  <img src="{{ pathQr }}" alt="qr-code" />
+  <button
+    class="backbtn"
+    mat-flat-button
+    color="primary"
+    type="submit"
+    style="background: linear-gradient(to bottom right, #4395c4, #194ae9);"
+    (click)="back()"
+  >
+    Volver
+  </button>
+</body>

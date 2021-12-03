@@ -1,0 +1,26 @@
+<app-spinner *ngIf="isFetchingData"></app-spinner>
+<body>
+  <div class="heade">
+    <h1>MOZO</h1>
+    <button class="btnliberar" (click)="volver()">Volver</button>
+  </div>
+  <!--<div class="liberarMesa">
+    <button class="btnliberar" (click)="volver()">Volver</button>
+  </div>-->
+  <div class="divCont">
+    <li *ngFor="let item of listaPagos; index as i">
+      <p class="item">{{ i + 1 }}/{{ listaPagos.length }} - {{ item.id }} - {{ item.mesa }}</p>
+      <div class="yesno">
+        <p class="confirmar" (click)="confirmarPago(item)">confirmar</p>
+        <p
+          class="rechazar"
+          style="background-color: #850a05"
+          (click)="rechazarPago(item)"
+        >
+          rechazar
+        </p>
+      </div>
+    </li>
+  </div>
+  <div *ngIf="listaPagos.length == 0">No hay pagos!</div>
+</body>

@@ -1,0 +1,101 @@
+$font-color: #646262;
+$title-color: #646262;
+
+ion-title {
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    background: var(--main-theme-color);
+    padding: 17px;
+}
+
+.menubtn {
+    position: absolute;
+    z-index: 999999;
+    width: 50px;
+    height: 50px;
+    left: 15px;
+    top: 7px;
+}
+
+.shadow {
+    background-color: #f8f5e5;
+
+    -moz-box-shadow: 0px 0px 5px 6px #3f001f;
+    -webkit-box-shadow: 0px 0px 5px 6px #3f001f;
+    box-shadow: 5px 5px 5px 6px #3f001f;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+
+    height: 650px;
+    width: 350px;
+    align-self: center;
+    filter: drop-shadow(10px, 10px, 10px);
+}
+
+.cont {
+    background: var(--main-theme-color);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 130%;
+    color: $title-color;
+}
+
+p {
+    color: $title-color;
+}
+
+input {
+    height: 25px;
+    width: 270px;
+    background-color: #f8f5e5;
+}
+
+.messageContainer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.inputField {
+    margin: 0 auto;
+    width: 275px;
+    color: $font-color;
+}
+
+mat-label {
+    color: $font-color;
+}
+
+button {
+    width: 150px;
+    color: #f5f2ef;
+}
+
+a {
+    text-decoration: none;
+    color: #646464;
+    font-size: 85%;
+    margin: 0 auto;
+}
+
+.fotobtn {
+    margin: 0 auto;
+}
+
+.qr {
+    width: 75px;
+    text-shadow: 1px 1px 2px black;
+    font-weight: bold;
+    background: linear-gradient(to bottom right, #4cf191, #033f17);
+}

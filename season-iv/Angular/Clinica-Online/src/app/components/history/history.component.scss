@@ -1,0 +1,15 @@
+h3 {
+  display: block;
+  margin: auto;
+}
+
+.cont {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+
+  b {
+    color: #786e7e;
+    margin-left: 7px;
+  }
+}

@@ -1,0 +1,78 @@
+<ion-header [translucent]="true">
+    <ion-toolbar>
+        <ion-title> Control de Gastos </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<!-- <div class="content"></div> -->
+<button class="menubtn" mat-mini-fab color="dark" [matMenuTriggerFor]="menu">
+    <mat-icon>menu</mat-icon>
+</button>
+<mat-menu #menu="matMenu">
+    <!-- <button mat-menu-item class="mat-menu-item" (click)="myPhotos()">
+        <mat-icon>photo_library</mat-icon>
+    </button> -->
+    <button mat-menu-item class="mat-menu-item" (click)="logOut()">
+        <mat-icon>exit_to_app</mat-icon>
+    </button>
+</mat-menu>
+<div class="content">
+    <div class="importes">
+        <mat-form-field class="inputField">
+            <mat-label>$$ Salario Mensual</mat-label>
+            <input
+                matInput
+                type="number"
+                [(ngModel)]="salario"
+                name="usernameForm"
+                required
+            />
+        </mat-form-field>
+        <mat-form-field class="inputField">
+            <mat-label>$$ Alimentos Mensual</mat-label>
+            <input
+                matInput
+                type="number"
+                [(ngModel)]="alimentos"
+                name="alimentosForm"
+                required
+            />
+        </mat-form-field>
+        <mat-form-field class="inputField">
+            <mat-label>$$ Medicina Mensual</mat-label>
+            <input
+                matInput
+                type="number"
+                [(ngModel)]="medicina"
+                name="medicinaForm"
+                required
+            />
+        </mat-form-field>
+        <mat-form-field class="inputField">
+            <mat-label>$$ Servicios Mensual</mat-label>
+            <input
+                matInput
+                type="number"
+                [(ngModel)]="servicios"
+                name="serviciosForm"
+                required
+            />
+        </mat-form-field>
+        <mat-form-field class="inputField">
+            <mat-label>$$ Impuestos Mensual</mat-label>
+            <input
+                matInput
+                type="number"
+                [(ngModel)]="impuestos"
+                name="impuestosForm"
+                required
+            />
+        </mat-form-field>
+
+        <button class="btnEnviar" (click)="cargarGastos()">Enviar Datos</button>
+    </div>
+    <div class="form-button">
+        <button (click)="piechart()">Grafico de Gastos</button>
+        <button (click)="barchart()">Grafico de Ahorros</button>
+    </div>
+</div>

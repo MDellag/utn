@@ -1,0 +1,119 @@
+.chat {
+  width: 400px;
+  height: 100%;
+  background-color: var(--main-theme-dark);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding: 15px;
+  h3 {
+    color: var(--main-theme-light);
+    margin: 0 auto;
+  }
+
+  .message-container {
+    height: 100%;
+    overflow-y: auto;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}
+
+.message {
+  border: 2px solid #dedede;
+  // background-color: #f1f1f1;
+  background: rgb(236, 235, 234);
+  background: linear-gradient(
+    90deg,
+    rgba(236, 235, 234, 1) 0%,
+    rgba(201, 201, 199, 1) 35%,
+    rgba(166, 165, 161, 1) 100%
+  );
+  border-radius: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 10px 0;
+  word-break: break-all;
+  &::after {
+    content: '';
+    clear: both;
+    display: table;
+  }
+}
+
+.me {
+  border: 2px solid #5c5c5c;
+  background-color: #5c5c5c;
+  color: #f1f1f1;
+  h4 {
+    text-align: right;
+  }
+}
+
+.time-right {
+  float: right;
+  color: rgb(10, 10, 10);
+}
+
+.send {
+  background-color: var(--main-theme-light);
+  padding: 5px;
+  padding-right: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  input {
+    background-color: var(--main-theme-dark);
+    width: 85%;
+    border-radius: 5px;
+    border-color: var(--main-theme-dark);
+    color: var(--main-theme-light);
+    padding: 5px;
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .sendbtn {
+    height: 32px;
+    width: 15px;
+    margin-left: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-theme-dark);
+    border-color: var(--main-theme-dark);
+
+    &:hover {
+      background: #1d1b31;
+      color: #fff;
+    }
+  }
+
+  .icon-color {
+    color: var(--main-theme-light);
+  }
+}
+
+.shadow {
+  -moz-box-shadow: 0px 0px 5px 6px var(--main-theme-dark);
+  -webkit-box-shadow: 0px 0px 5px 6px var(--main-theme-dark);
+  box-shadow: 5px 5px 5px 6px var(--main-theme-dark);
+}
+
+.empty-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+  .chat-empty {
+    color: #fff;
+  }
+}

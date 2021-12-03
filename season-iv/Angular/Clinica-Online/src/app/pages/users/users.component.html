@@ -1,0 +1,306 @@
+<form>
+    <fieldset>
+        <legend>Agregar Usuario</legend>
+        <div class="row">
+            <mat-form-field class="inputField">
+                <mat-label>@email</mat-label>
+                <input
+                    matInput
+                    type="text"
+                    name="emailForm"
+                    [(ngModel)]="user_data.email"
+                    required
+                />
+            </mat-form-field>
+
+            <mat-form-field class="inputField">
+                <mat-label>dni</mat-label>
+                <input
+                    matInput
+                    type="number"
+                    [(ngModel)]="user_data.dni"
+                    name="dniForm"
+                    required
+                />
+            </mat-form-field>
+
+            <mat-form-field class="inputField">
+                <mat-label>nombre</mat-label>
+                <input
+                    matInput
+                    type="text"
+                    [(ngModel)]="user_data.name"
+                    name="nameForm"
+                    required
+                />
+            </mat-form-field>
+
+            <mat-form-field class="inputField">
+                <mat-label>apellido</mat-label>
+                <input
+                    matInput
+                    type="text"
+                    [(ngModel)]="user_data.lastname"
+                    name="lastnameForm"
+                    required
+                />
+            </mat-form-field>
+        </div>
+
+        <div class="row">
+            <mat-form-field class="inputField">
+                <mat-label>password</mat-label>
+                <input
+                    matInput
+                    type="password"
+                    [(ngModel)]="user_data.password"
+                    name="passwordForm"
+                    required
+                />
+            </mat-form-field>
+
+            <mat-form-field class="inputField">
+                <mat-label>confirm password</mat-label>
+                <input
+                    matInput
+                    type="password"
+                    [(ngModel)]="user_data.passwordConfirm"
+                    name="passwordConfirmForm"
+                    required
+                />
+            </mat-form-field>
+
+            <mat-form-field class="inputField">
+                <mat-label>Tipo de Usuario</mat-label>
+                <mat-select
+                    [(ngModel)]="user_data.typeUser"
+                    [ngModelOptions]="{ standalone: true }"
+                    required
+                >
+                    <mat-option value="PATIENT">Paciente</mat-option>
+                    <mat-option value="SPECIALIST">Especialista</mat-option>
+                    <mat-option value="ADMIN">Administrador</mat-option>
+                </mat-select>
+            </mat-form-field>
+
+            <mat-form-field
+                class="inputField"
+                *ngIf="user_data.typeUser === 'PATIENT'"
+            >
+                <mat-label>Obra Social</mat-label>
+                <mat-select
+                    [(ngModel)]="user_data.obraSocial"
+                    [ngModelOptions]="{ standalone: true }"
+                    required
+                >
+                    <mat-option
+                        *ngFor="let spec of obrasSociales"
+                        value="{{ spec }}"
+                        >{{ spec }}</mat-option
+                    >
+                </mat-select>
+            </mat-form-field>
+
+            <mat-form-field
+                class="inputField"
+                *ngIf="user_data.typeUser === 'SPECIALIST'"
+            >
+                <mat-label>Especialidad</mat-label>
+                <mat-select
+                    [(ngModel)]="user_data.especialidad"
+                    [ngModelOptions]="{ standalone: true }"
+                    required
+                    multiple
+                >
+                    <mat-option *ngFor="let spec of specs" value="{{ spec }}">{{
+                        spec
+                    }}</mat-option>
+                </mat-select>
+            </mat-form-field>
+
+            <mat-form-field
+                class="inputField"
+                *ngIf="
+                    user_data.especialidad.includes('Otro') &&
+                    user_data.typeUser === 'SPECIALIST'
+                "
+            >
+                <mat-label>Otro</mat-label>
+                <input
+                    matInput
+                    type="text"
+                    [(ngModel)]="user_data.other"
+                    name="otherForm"
+                    required
+                />
+            </mat-form-field>
+        </div>
+
+        <div class="row">
+            <mat-form-field class="inputField">
+                <ngx-mat-file-input
+                    [(ngModel)]="user_data.photo"
+                    name="imageForm"
+                    [multiple]="user_data.typeUser == 'PATIENT'"
+                    accept="image/*"
+                    color="accent"
+                    class="file-input"
+                >
+                </ngx-mat-file-input>
+            </mat-form-field>
+
+            <button
+                mat-flat-button
+                type="submit"
+                style="
+                    background-color: var(--main-theme-light);
+                    color: var(--main-theme-dark);
+                "
+                (click)="addUser()"
+            >
+                > Añadir Usuario
+            </button>
+
+            <button
+                mat-flat-button
+                type="button"
+                class="export"
+                style="
+                    background-color: var(--main-theme-light);
+                    color: var(--main-theme-dark);
+                "
+                (click)="saveCsv()"
+            >
+                > Export to CSV
+            </button>
+        </div>
+    </fieldset>
+</form>
+
+<mat-divider inset></mat-divider>
+<mat-progress-bar mode="indeterminate" *ngIf="fetching"></mat-progress-bar>
+<app-card-users
+    [users]="userList"
+    (disableEnable)="enableDisable($event)"
+    (clickedUser)="downloadUserTurns($event)"
+></app-card-users>
+
+<!-- <table mat-table [dataSource]="userList" class="mat-elevation-z8"> -->
+<!-- Dni Column -->
+<!-- <ng-container matColumnDef="dni">
+        <th mat-header-cell *matHeaderCellDef>Dni</th>
+        <td mat-cell *matCellDef="let element">{{ element.dni }}</td>
+    </ng-container> -->
+
+<!-- Email Column -->
+<!-- <ng-container matColumnDef="email">
+        <th mat-header-cell *matHeaderCellDef>Email</th>
+        <td mat-cell *matCellDef="let element">{{ element.email }}</td>
+    </ng-container> -->
+
+<!-- Name Column -->
+<!-- <ng-container matColumnDef="name">
+        <th mat-header-cell *matHeaderCellDef>Nombre</th>
+        <td mat-cell *matCellDef="let element">{{ element.name }}</td>
+    </ng-container> -->
+
+<!-- Lastname Column -->
+<!-- <ng-container matColumnDef="lastname">
+        <th mat-header-cell *matHeaderCellDef>Apellido</th>
+        <td mat-cell *matCellDef="let element">{{ element.lastname }}</td>
+    </ng-container> -->
+
+<!-- Type User Column -->
+<!-- <ng-container matColumnDef="type">
+        <th mat-header-cell *matHeaderCellDef>Tipo</th>
+        <td mat-cell *matCellDef="let element">
+            {{
+                element.type === 'ADMIN'
+                    ? 'Administrador'
+                    : element.type === 'PATIENT'
+                    ? 'Paciente'
+                    : 'Especialista'
+            }}
+        </td>
+    </ng-container> -->
+
+<!-- Specialities Column -->
+<!-- <ng-container matColumnDef="especialidad">
+        <th mat-header-cell *matHeaderCellDef>Especialidades</th>
+        <td mat-cell *matCellDef="let element">
+            {{
+                element.especialidad.length == 0
+                    ? '----------'
+                    : element.especialidad
+            }}
+        </td>
+    </ng-container> -->
+
+<!-- Obra Social Column -->
+<!-- <ng-container matColumnDef="obraSocial">
+        <th mat-header-cell *matHeaderCellDef>Obra Social</th>
+        <td mat-cell *matCellDef="let element">
+            {{ element.obraSocial || '----------' }}
+        </td>
+    </ng-container> -->
+
+<!-- Photos Column -->
+<!-- <ng-container matColumnDef="photo">
+        <th mat-header-cell *matHeaderCellDef>Fotos</th>
+        <td mat-cell *matCellDef="let element">
+            <img *ngFor="let image of element.photo" [src]="image" />
+        </td>
+    </ng-container> -->
+
+<!-- Approved Column -->
+<!-- <ng-container matColumnDef="approved">
+        <th mat-header-cell *matHeaderCellDef>Habilitado</th>
+        <td mat-cell *matCellDef="let element">
+            {{ element.approved ? 'Si' : 'No' }}
+        </td>
+    </ng-container> -->
+
+<!-- Options Column -->
+<!-- <ng-container matColumnDef="options">
+        <th mat-header-cell *matHeaderCellDef></th>
+        <td mat-cell *matCellDef="let element">
+            <button
+                mat-icon-button
+                aria-label="menu-button"
+                [matMenuTriggerFor]="menu"
+                [disabled]="element.type === 'ADMIN'"
+            >
+                <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu">
+                <button
+                    mat-menu-item
+                    *ngIf="element.type === 'PATIENT'"
+                    (click)="displayDialog(element.dni)"
+                >
+                    <mat-icon>list</mat-icon>
+                    <span>Historia Clinica</span>
+                </button>
+                <button
+                    mat-menu-item
+                    *ngIf="element.type === 'SPECIALIST' && element.approved"
+                    (click)="enableDisable(element.dni)"
+                >
+                    <mat-icon>remove_circle</mat-icon>
+                    <span>Inhabilitar</span>
+                </button>
+                <button
+                    mat-menu-item
+                    *ngIf="element.type === 'SPECIALIST' && !element.approved"
+                    (click)="enableDisable(element.dni)"
+                >
+                    <mat-icon>add_circle</mat-icon>
+                    <span>Habilitar</span>
+                </button>
+            </mat-menu>
+        </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+</table> -->

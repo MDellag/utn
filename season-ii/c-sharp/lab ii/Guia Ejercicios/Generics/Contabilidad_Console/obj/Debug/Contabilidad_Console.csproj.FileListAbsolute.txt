@@ -1,0 +1,10 @@
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\Generics\Contabilidad_Console\bin\Debug\Contabilidad_Console.exe.config
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\Generics\Contabilidad_Console\bin\Debug\Contabilidad_Console.exe
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\Generics\Contabilidad_Console\bin\Debug\Contabilidad_Console.pdb
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\Generics\Contabilidad_Console\bin\Debug\Ejercicio_48.dll
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\Generics\Contabilidad_Console\bin\Debug\Ejercicio_48.pdb
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\Generics\Contabilidad_Console\obj\Debug\Contabilidad_Console.csprojAssemblyReference.cache
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\Generics\Contabilidad_Console\obj\Debug\Contabilidad_Console.csproj.CoreCompileInputs.cache
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\Generics\Contabilidad_Console\obj\Debug\Contabilidad_Console.csproj.CopyComplete
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\Generics\Contabilidad_Console\obj\Debug\Contabilidad_Console.exe
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\Generics\Contabilidad_Console\obj\Debug\Contabilidad_Console.pdb

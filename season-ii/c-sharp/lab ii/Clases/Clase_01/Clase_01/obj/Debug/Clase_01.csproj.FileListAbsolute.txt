@@ -1,0 +1,7 @@
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Clases\Clase_01\Clase_01\bin\Debug\Clase_01.exe.config
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Clases\Clase_01\Clase_01\bin\Debug\Clase_01.exe
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Clases\Clase_01\Clase_01\bin\Debug\Clase_01.pdb
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Clases\Clase_01\Clase_01\obj\Debug\Clase_01.csprojAssemblyReference.cache
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Clases\Clase_01\Clase_01\obj\Debug\Clase_01.csproj.CoreCompileInputs.cache
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Clases\Clase_01\Clase_01\obj\Debug\Clase_01.exe
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Clases\Clase_01\Clase_01\obj\Debug\Clase_01.pdb

@@ -1,0 +1,96 @@
+<div class="cont">
+    <div class="turn">
+        <h2>Solicite su Turno</h2>
+        <br />
+        <br />
+        <h3 *ngIf="user.type === 'ADMIN'">Seleccione Paciente</h3>
+        <app-button-users
+            *ngIf="user.type === 'ADMIN'"
+            [users]="patientList"
+            (user)="updateSelectedPatient($event)"
+        ></app-button-users>
+        <br />
+        <h3>Seleccione Especialista</h3>
+        <app-button-users
+            [users]="especialistaList"
+            (user)="updateSpecialityList($event)"
+        ></app-button-users>
+
+        <br />
+        <h3 *ngIf="especialidadesList.length > 1">Seleccione Especialidad</h3>
+        <div class="countriesbtns" *ngIf="especialidadesList.length > 1">
+            <div class="btnPaises" *ngFor="let spec of especialidadesList">
+                <input
+                    type="radio"
+                    class="btn-check"
+                    name="btnradio"
+                    id="{{ spec }}"
+                    autocomplete="off"
+                    (change)="updateSpeciality(spec)"
+                />
+
+                <label class="btn btn-outline-primary" for="{{ spec }}">
+                    <img appBrokenImage src="" alt="especialidad" />
+                    {{ spec }}</label
+                >
+            </div>
+        </div>
+        <br />
+        <h3 *ngIf="especialista">Seleccione Dia-Horario</h3>
+        <app-horarios
+            *ngIf="especialista"
+            [dni]="especialista.dni"
+            (diaHorario)="handleDateTurn($event)"
+        ></app-horarios>
+
+        <br />
+        <br />
+        <br />
+        <button
+            type="button"
+            class="btn btn-primary btn-lg"
+            (click)="addTurn()"
+        >
+            Solicitar Turno
+        </button>
+    </div>
+
+    <mat-card class="card">
+        <mat-card-title-group>
+            <mat-card-title>Detalles del turno</mat-card-title>
+            <mat-card-subtitle
+                >Paciente: {{ paciente.lastname }}
+                {{ paciente.name }}
+            </mat-card-subtitle>
+            <img
+                appBrokenImage
+                class="mat-img"
+                mat-card-sm-image
+                src="{{ paciente.photo[0] }}"
+            />
+            <!-- TODO: DIRECTIVE for IMAGE BROKEN-->
+        </mat-card-title-group>
+        <br />
+        <mat-card-content>
+            <mat-list role="list">
+                <mat-list-item role="listitem"
+                    >Especialista:
+                    <b class="item">
+                        {{ turnData.specialist }}
+                    </b></mat-list-item
+                >
+                <mat-list-item role="listitem"
+                    >Especialidad:
+                    <b class="item">
+                        {{ turnData.speciality }}</b
+                    ></mat-list-item
+                >
+
+                <mat-list-item role="listitem"
+                    >Dia:
+                    <b class="item">{{ turnData.date }} </b></mat-list-item
+                >
+            </mat-list>
+        </mat-card-content>
+    </mat-card>
+</div>

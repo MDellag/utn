@@ -1,0 +1,16 @@
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\CentralTelefonica\FormLlamador\bin\Release\FormLlamador.exe.config
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\CentralTelefonica\FormLlamador\bin\Release\FormLlamador.exe
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\CentralTelefonica\FormLlamador\bin\Release\FormLlamador.pdb
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\CentralTelefonica\FormLlamador\bin\Release\CentralTelefonicaForm.exe
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\CentralTelefonica\FormLlamador\bin\Release\CentralitaHerencia.dll
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\CentralTelefonica\FormLlamador\bin\Release\CentralTelefonicaForm.pdb
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\CentralTelefonica\FormLlamador\bin\Release\CentralTelefonicaForm.exe.config
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\CentralTelefonica\FormLlamador\bin\Release\CentralitaHerencia.pdb
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\CentralTelefonica\FormLlamador\obj\Release\FormLlamador.csprojAssemblyReference.cache
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\CentralTelefonica\FormLlamador\obj\Release\FormLlamador.FormLlamador.resources
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\CentralTelefonica\FormLlamador\obj\Release\FormLlamador.Properties.Resources.resources
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\CentralTelefonica\FormLlamador\obj\Release\FormLlamador.csproj.GenerateResource.cache
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\CentralTelefonica\FormLlamador\obj\Release\FormLlamador.csproj.CoreCompileInputs.cache
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\CentralTelefonica\FormLlamador\obj\Release\FormLlamador.csproj.CopyComplete
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\CentralTelefonica\FormLlamador\obj\Release\FormLlamador.exe
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\CentralTelefonica\FormLlamador\obj\Release\FormLlamador.pdb

@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1567536370 source:c:\users\nehl\documents\c\calculadoratp\calculadora.c
+
+1567536167 source:c:\users\nehl\documents\c\calculadoratp\main.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	"calculadora.h"
+
+1567536337 c:\users\nehl\documents\c\calculadoratp\calculadora.h
+

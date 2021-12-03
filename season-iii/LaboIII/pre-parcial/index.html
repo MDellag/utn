@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">\
+    <script src="./scripts/scripts.js" defer type="module"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <h1>Alta Personas</h1>
+
+    <div class="container">
+        <div><input type="text" name="" id="namePers" placeholder="nombre"></div>
+        <div><input type="text" name="" id="apellPers" placeholder="apellido"></div>
+        <div><input type="text" name="" id="dniPers" placeholder="dni"></div>
+        <div><input type="text" name="" id="sexoPers" placeholder="sexo"></div>
+        <div><button type="submit" onclick="pushPersonToList()">Submit</button></div>
+    </div> -->
+
+    <section class="container" id="dataIn">
+        <form>
+            <label> Nombre:<input type="text" id="txtNombre" name="nombre" required> </label>
+            <!--La propiedad name es el nombre de la variable que viaja sera como ng-model? -->
+            <br /><br />
+            <label> Apellido:<input type="text" id="txtApellido" name="apellido" required> </label>
+            <br /><br />
+            <label> Email:<input type="text" id="txtEmail" name="email" required></label>
+            <br /><br />
+
+            <fieldset>
+                <legend>Genero</legend>
+                <label for="rdoM"> <input type="radio" name="Gender" id="rdoM" value="Male" checked>Masculino</label>
+                <br /><br />
+                <label for="rdoF"> <input type="radio" name="Gender" id="rdoF" value="Female">Femenino</label>
+                <br /><br />
+
+                <button>Alta Persona</button>
+                <input type="button" value="Delete List" id="btnDeleteList">
+                <input type="button" value="Mostrar Lista" id="btnShowList">
+            </fieldset>
+
+            
+        </form>
+    </section>
+
+
+    <!--  <table id="tablePersons">
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>DNI</th>
+            <th>sexo</th>
+        </tr>
+    </table> -->
+    <!-- <button id="btnTabl">Load Table</button> -->
+
+    <div class="container" id="divTabla">
+
+
+    </div>
+
+</body>
+
+</html>

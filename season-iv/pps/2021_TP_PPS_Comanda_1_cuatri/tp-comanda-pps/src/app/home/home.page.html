@@ -1,0 +1,81 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <div class="header">
+      <button
+        style="margin-left: 10px;"
+        mat-mini-fab
+        color="dark"
+        [matMenuTriggerFor]="menu"
+        aria-label="Example icon-button with a menu"
+      >
+        <mat-icon>menu</mat-icon>
+      </button>
+
+      <!-- LISTA DE ICONOS EN MENU -->
+      <mat-menu #menu="matMenu">
+
+        <button mat-menu-item (click)="irMesa()" *ngIf="iUser.typeUser == 'Anonimo' || iUser.typeUser == 'Cliente'">
+          <mat-icon>av_timer</mat-icon>
+          <span>Pedidos Realizados</span>
+        </button>
+  
+        <button mat-menu-item>
+          <mat-icon>volume_off</mat-icon>
+          <span>Desactivar Sonidos</span>
+        </button>
+        <button mat-menu-item (click)="quit()">
+          <mat-icon>exit_to_app</mat-icon>
+          <span>Salir</span>
+        </button>
+        
+      </mat-menu>
+      <!-- FIN LISTA ICONOS EN MENU-->
+
+      <ion-title> RESTOBAR </ion-title>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Blank</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div class="cuerpo">
+    <img src={{avatar}} alt="imagen de usuario" />
+    <div class="text">
+      <p id="name"><strong>{{name}}!!</strong></p>
+      <p>Bienvenido al RestoBar</p>
+      <p>Por favor ingrese a la lista de espera</p>
+    </div>
+
+    <div class= "controladorBotones">
+      <button
+          class="qr"
+          mat-flat-button
+          color="primary"
+          type="submit"
+          style="background-color: #027c21"
+          (click)="scanCode()"
+        >
+          QR LISTA <br/>
+          ESPERA
+    </button>
+
+    <button
+          class="mesa"
+          mat-flat-button
+          color="primary"
+          type="submit"
+          style="background-color: #027c21"
+          (click)="tomarMesa()"
+        >QR MESA
+          
+    </button>
+    </div>
+    
+
+  </div>
+</ion-content>

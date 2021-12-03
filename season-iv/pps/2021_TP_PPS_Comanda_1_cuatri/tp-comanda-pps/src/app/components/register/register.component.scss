@@ -1,0 +1,99 @@
+$background-color-darkmode: linear-gradient(to bottom right, #d38124, #c44d09);
+$font-color: #646262;
+$title-color: #646262;
+
+.container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 100%;
+}
+
+body {
+  background: $background-color-darkmode;
+  height: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  height: 30%;
+  width: 350px;
+  align-self: center;
+  filter: drop-shadow(10px, 10px, 10px);
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 130%;
+  color: $title-color;
+}
+
+p {
+  color: $title-color;
+}
+
+input {
+  height: 25px;
+  width: 270px;
+  background-color: #f8f5e5;
+}
+
+.messageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputField {
+  margin: 0 auto;
+  width: 275px;
+  color: $font-color;
+}
+
+mat-label {
+  color: $font-color;
+}
+
+button {
+  width: 120px;
+  color: #f5f2ef;
+
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  text-shadow: 1px 1px 2px black;
+  font-weight: bold;
+}
+
+.shadow {
+  background-color: #f8f5e5;
+  height: 600px;
+  -moz-box-shadow: 0px 0px 5px 6px #530c03;
+  -webkit-box-shadow: 0px 0px 5px 6px #530c03;
+  box-shadow: 5px 5px 5px 6px #530c03;
+}
+
+a {
+  text-decoration: none;
+  color: #646464;
+  font-size: 85%;
+  margin: 0 auto;
+}
+
+.qr {
+  width: 75px;
+  text-shadow: 1px 1px 2px black;
+  font-weight: bold;
+  background: linear-gradient(to bottom right, #4cf191, #033f17);
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.scroll {
+  overflow: scroll;
+}

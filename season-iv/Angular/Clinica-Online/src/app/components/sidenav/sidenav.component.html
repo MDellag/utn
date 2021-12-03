@@ -1,0 +1,92 @@
+<div #sidebar class="sidebar" [ngClass]="{ open: sidebar_opened }">
+    <div class="logo-details">
+        <i class="bx bx-health icon"></i>
+        <div class="logo_name">Clinica Online</div>
+        <i class="bx bx-menu" id="btn" (click)="openSideBar()"></i>
+    </div>
+    <ul class="nav-list">
+        <!-- <li>
+            <i #bxsearch class="bx bx-search"></i>
+            <input type="text" placeholder="Search..." />
+            <span class="tooltip">Search</span>
+        </li> -->
+        <!-- <li *ngIf="loggedIn">
+            <a (click)="redirect('home')">
+                <i class="bx bx-grid-alt"></i>
+                <span class="links_name">Home</span>
+            </a>
+            <span class="tooltip">Home</span>
+        </li> -->
+        <li>
+            <a [routerLink]="['/perfil']">
+                <i class="bx bxs-user-rectangle"></i>
+                <span class="links_name">Perfil</span>
+            </a>
+            <span class="tooltip">Perfil</span>
+        </li>
+        <li>
+            <a [routerLink]="['/usuarios']">
+                <i class="bx bxs-group"></i>
+                <span class="links_name">Usuarios</span>
+            </a>
+            <span class="tooltip">Usuarios</span>
+        </li>
+
+        <li>
+            <a [routerLink]="['/solicitar-turno']">
+                <i class="bx bxs-notepad"></i>
+                <span class="links_name">Solicitar Turno</span>
+            </a>
+            <span class="tooltip">Solicitar Turno</span>
+        </li>
+
+        <li>
+            <a [routerLink]="['/mis-turnos']">
+                <i class="bx bxs-book-content"></i>
+                <span class="links_name">Mis Turnos</span>
+            </a>
+            <span class="tooltip">Mis Turnos</span>
+        </li>
+        <li>
+            <a [routerLink]="['/turnos']">
+                <i class="bx bx-list-ol"></i>
+                <span class="links_name">Turnos</span>
+            </a>
+            <span class="tooltip">Turnos</span>
+        </li>
+        <li>
+            <a [routerLink]="['/pacientes']">
+                <i class="bx bxs-user-detail"></i>
+                <span class="links_name">Pacientes</span>
+            </a>
+            <span class="tooltip">Pacientes</span>
+        </li>
+        <li>
+            <a [routerLink]="['/informes']">
+                <i class="bx bxs-book-bookmark"></i>
+                <span class="links_name">Informes</span>
+            </a>
+            <span class="tooltip">Informes</span>
+        </li>
+        <li class="profile" *ngIf="loggedIn">
+            <div class="profile-details">
+                <!-- <img src="profile.jpg" alt="profileImg" /> -->
+                <div class="name_job">
+                    <div class="name">{{ name }}</div>
+                    <div class="job">{{ email }}</div>
+                </div>
+            </div>
+            <a (click)="logOut()">
+                <i class="bx bx-log-out" id="log_out"></i>
+            </a>
+            <span class="tooltip">LogOut</span>
+        </li>
+        <li class="profile" *ngIf="!loggedIn">
+            <a [routerLink]="['/login']">
+                <i class="bx bx-log-in"></i>
+                <span class="links_name">LogIn</span>
+            </a>
+            <span class="tooltip">LogIn</span>
+        </li>
+    </ul>
+</div>

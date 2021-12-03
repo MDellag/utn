@@ -1,0 +1,10 @@
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\Generics\Torneo_Console\bin\Debug\Torneo_Console.exe.config
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\Generics\Torneo_Console\bin\Debug\Torneo_Console.exe
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\Generics\Torneo_Console\bin\Debug\Torneo_Console.pdb
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\Generics\Torneo_Console\bin\Debug\Ejercicio_47.dll
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\Generics\Torneo_Console\bin\Debug\Ejercicio_47.pdb
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\Generics\Torneo_Console\obj\Debug\Torneo_Console.csprojAssemblyReference.cache
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\Generics\Torneo_Console\obj\Debug\Torneo_Console.csproj.CoreCompileInputs.cache
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\Generics\Torneo_Console\obj\Debug\Torneo_Console.csproj.CopyComplete
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\Generics\Torneo_Console\obj\Debug\Torneo_Console.exe
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\Generics\Torneo_Console\obj\Debug\Torneo_Console.pdb

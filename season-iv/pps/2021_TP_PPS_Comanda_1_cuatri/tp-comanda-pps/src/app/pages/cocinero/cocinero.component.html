@@ -1,0 +1,14 @@
+<app-spinner *ngIf="isLoading"></app-spinner>
+<body>
+  <div class="heade"><h1>COCINA</h1></div>
+  <div class="pedidos">
+    <li *ngFor="let item of pedidos; index as i">
+      <p class="item">{{ i + 1 }}/{{ pedidos.length }} - {{ item.nombre }} - cant. {{item.cantidad}} </p>
+      <p class="confirm" (click)="entregarPedido(item)">Entregar</p>
+    </li>
+ 
+  </div>
+  <div class="noPedidos" *ngIf="pedidos.length == 0">
+    No hay pedidos!
+  </div>
+</body>

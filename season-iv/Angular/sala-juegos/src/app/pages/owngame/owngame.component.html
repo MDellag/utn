@@ -1,0 +1,7 @@
+<div class="game">
+    <span *ngIf="!gameRunning">Press P to play</span>
+    <div #ninja class="ninja" [ngClass]="{ jump: jumping }"></div>
+    <div #enemy class="enemy" [ngClass]="{ playing: gameRunning }"></div>
+</div>
+
+<span class="score">Score: {{ score }}</span>

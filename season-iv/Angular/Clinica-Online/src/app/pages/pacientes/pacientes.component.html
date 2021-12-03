@@ -1,0 +1,97 @@
+<mat-form-field class="inputField">
+    <mat-label
+        >Filtro - que desea buscar.. <mat-icon>search</mat-icon></mat-label
+    >
+    <input
+        matInput
+        type="text"
+        [(ngModel)]="filtro"
+        (ngModelChange)="onFilterSpeciality()"
+        name="filterEspecialidadForm"
+    />
+</mat-form-field>
+
+<h3>Seleccione al Paciente</h3>
+<app-button-users
+    [users]="patientList"
+    [roundButton]="true"
+    (user)="handleSelectedPatient($event)"
+></app-button-users>
+
+<table
+    mat-table
+    *ngIf="selectedPatientList"
+    [dataSource]="selectedPatientList"
+    class="mat-elevation-z8"
+>
+    <!-- Dni Column -->
+    <ng-container matColumnDef="especialidad">
+        <th mat-header-cell *matHeaderCellDef>Especialidad</th>
+        <td mat-cell *matCellDef="let element">{{ element.especialidad }}</td>
+    </ng-container>
+
+    <!-- Email Column -->
+    <ng-container matColumnDef="status">
+        <th mat-header-cell *matHeaderCellDef>Estado</th>
+        <td
+            mat-cell
+            *matCellDef="let element"
+            [class]="statusClass[element.status]"
+        >
+            {{ element.status | toLowerFirstUpper }}
+        </td>
+    </ng-container>
+
+    <!-- Name Column -->
+    <ng-container matColumnDef="date">
+        <th mat-header-cell *matHeaderCellDef>Fecha</th>
+        <td mat-cell *matCellDef="let element">{{ element.date }}</td>
+    </ng-container>
+
+    <!-- Lastname Column -->
+    <!-- <ng-container matColumnDef="lastname">
+        <th mat-header-cell *matHeaderCellDef>Apellido</th>
+        <td mat-cell *matCellDef="let element">{{ element.lastname }}</td>
+    </ng-container> -->
+
+    <!-- Obra Social Column -->
+    <!-- <ng-container matColumnDef="obraSocial">
+        <th mat-header-cell *matHeaderCellDef>Obra Social</th>
+        <td mat-cell *matCellDef="let element">
+            {{ element.obraSocial }}
+        </td>
+    </ng-container> -->
+
+    <!-- Options Column -->
+    <ng-container matColumnDef="options">
+        <th mat-header-cell *matHeaderCellDef></th>
+        <td mat-cell *matCellDef="let element">
+            <button
+                mat-icon-button
+                aria-label="menu-button"
+                [matMenuTriggerFor]="menu"
+            >
+                <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu">
+                <button
+                    mat-menu-item
+                    (click)="displayDialog(element.id_paciente)"
+                >
+                    <mat-icon>list</mat-icon>
+                    <span>Historia Clinica</span>
+                </button>
+                <button mat-menu-item (click)="displayMessageDialog(element)">
+                    <mat-icon>list</mat-icon>
+                    <span>Ver Reseña</span>
+                </button>
+            </mat-menu>
+        </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+</table>
+<mat-progress-bar mode="indeterminate" *ngIf="fetching"></mat-progress-bar>
+
+<h2 *ngIf="patientList.length < 1">Aun no has atendido pacientes :(</h2>

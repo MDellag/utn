@@ -1,0 +1,146 @@
+<div class="box">
+    <mat-card class="content" *ngIf="!input">
+        <!-- <mat-card-subtitle>Dog Breed</mat-card-subtitle> -->
+        <mat-card-title *ngIf="message.resena">Reseña</mat-card-title>
+        <mat-card-content *ngIf="message.resena">
+            <!-- <p>This card has divider and indeterminate progress as footer</p> -->
+            <p>{{ message.resena }}</p>
+        </mat-card-content>
+        <mat-divider
+            inset
+            *ngIf="message.comment && message.resena"
+        ></mat-divider>
+        <br />
+        <mat-card-title *ngIf="message.comment">Comentario</mat-card-title>
+        <mat-card-content *ngIf="message.comment">
+            <!-- <p>This card has divider and indeterminate progress as footer</p> -->
+            <p>{{ message.comment }}</p>
+        </mat-card-content>
+        <mat-card-actions style="display: flex; justify-content: flex-end">
+            <button
+                mat-raised-button
+                color="primary"
+                (click)="closeDialog('continue')"
+            >
+                Volver
+            </button>
+        </mat-card-actions>
+        <!-- <mat-card-footer>
+            <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+        </mat-card-footer> -->
+    </mat-card>
+    <h1 *ngIf="input">Mensaje</h1>
+    <div class="content2" *ngIf="input">
+        <div class="cont3">
+            <textarea
+                class="comment"
+                [(ngModel)]="inputMessage"
+                placeholder="Reseña..."
+            ></textarea>
+            <form
+                class="form-cont"
+                *ngIf="user.type === 'SPECIALIST' && header === 'Reseña'"
+            >
+                <mat-form-field class="inputField">
+                    <mat-label>Altura</mat-label>
+                    <input
+                        matInput
+                        type="number"
+                        [(ngModel)]="extraData.altura"
+                        name="alturaForm"
+                        placeholder="ej 1.82"
+                        required
+                    />
+                </mat-form-field>
+
+                <mat-form-field class="inputField">
+                    <mat-label>Peso</mat-label>
+                    <input
+                        matInput
+                        type="number"
+                        [(ngModel)]="extraData.peso"
+                        name="pesoForm"
+                        placeholder="ej 49.4"
+                        required
+                    />
+                </mat-form-field>
+
+                <mat-form-field class="inputField">
+                    <mat-label>Temperatura</mat-label>
+                    <input
+                        matInput
+                        type="number"
+                        [(ngModel)]="extraData.temperatura"
+                        name="presionForm"
+                        placeholder="ej 36.1"
+                        required
+                    />
+                </mat-form-field>
+
+                <mat-form-field class="inputField">
+                    <mat-label>Presion</mat-label>
+                    <input
+                        matInput
+                        type="number"
+                        [(ngModel)]="extraData.presion"
+                        name="presionForm"
+                        placeholder="ej 11.7"
+                        required
+                    />
+                </mat-form-field>
+            </form>
+        </div>
+        <form
+            class="form-cont2"
+            *ngIf="user.type === 'SPECIALIST' && header === 'Reseña'"
+        >
+            <mat-form-field class="inputField2">
+                <mat-label>Dato extra 1</mat-label>
+                <input
+                    matInput
+                    type="text"
+                    [(ngModel)]="extra.dato_uno"
+                    name="alturaForm"
+                    placeholder="ej. caries:4"
+                />
+            </mat-form-field>
+
+            <mat-form-field class="inputField2">
+                <mat-label>Dato extra 1</mat-label>
+                <input
+                    matInput
+                    type="text"
+                    [(ngModel)]="extra.dato_dos"
+                    name="pesoForm"
+                    placeholder="ej. enfermedad:gripe"
+                />
+            </mat-form-field>
+
+            <mat-form-field class="inputField2">
+                <mat-label>Dato extra 1</mat-label>
+                <input
+                    matInput
+                    type="text"
+                    [(ngModel)]="extra.dato_tres"
+                    name="presionForm"
+                    placeholder="ej. sintomas:2"
+                />
+            </mat-form-field>
+        </form>
+    </div>
+
+    <div class="boxButtons" *ngIf="buttons">
+        <button mat-raised-button (click)="close()" *ngIf="input">
+            volver
+        </button>
+
+        <button
+            mat-raised-button
+            color="primary"
+            (click)="closeDialogMessage()"
+            *ngIf="input"
+        >
+            Continuar
+        </button>
+    </div>
+</div>

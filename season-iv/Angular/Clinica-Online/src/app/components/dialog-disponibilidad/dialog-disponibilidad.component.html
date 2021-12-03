@@ -1,0 +1,33 @@
+<mat-card class="result-card">
+    <mat-card-content>
+        <h2>Disponibilidad Horaria</h2>
+        <br />
+        <br />
+
+        <mat-form-field appearance="fill">
+            <mat-label>Disponibilidad - Desde</mat-label>
+            <mat-select [(ngModel)]="from" class="selc">
+                <mat-option *ngFor="let hour of times" [value]="hour">{{
+                    hour
+                }}</mat-option>
+            </mat-select>
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+            <mat-label>Disponibilidad - Hasta</mat-label>
+            <mat-select [(ngModel)]="to" class="selc">
+                <mat-option *ngFor="let hour of times" [value]="hour">{{
+                    hour
+                }}</mat-option>
+            </mat-select>
+        </mat-form-field>
+    </mat-card-content>
+    <button
+        mat-raised-button
+        color="accent"
+        class="btnSend"
+        (click)="closeDialogMessage()"
+    >
+        Enviar
+    </button>
+</mat-card>

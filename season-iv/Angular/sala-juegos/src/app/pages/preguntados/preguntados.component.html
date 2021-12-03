@@ -1,0 +1,111 @@
+<div class="container">
+    <div class="questionCont" *ngIf="gameStarted">
+        <span class="title">Question: </span>
+        <br />
+        <span class="question"> {{ question.question }} </span>
+    </div>
+
+    <div class="options" *ngIf="gameStarted">
+        <button
+            appRandomColor
+            *ngFor="let option of answers"
+            (click)="submitAnswer(option)"
+            [ngClass]="answer(option)"
+        >
+            {{ option }}
+        </button>
+    </div>
+
+    <div class="score" *ngIf="gameStarted">
+        <span>Score: {{ score }}</span>
+        <button (click)="goNextQuestion()" *ngIf="questions?.length > 0">
+            Next Question
+        </button>
+    </div>
+
+    <!-- ------------------------------------------------------- -->
+    <div class="settings" *ngIf="!gameStarted">
+        <form class="form-game">
+            <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>Question's Amount</mat-label>
+                <input
+                    type="number"
+                    matInput
+                    [formControl]="formControl"
+                    [errorStateMatcher]="matcher"
+                    placeholder="Ex. 10"
+                    [(ngModel)]="amountQuestions"
+                />
+                <mat-error
+                    *ngIf="
+                        formControl.hasError('email') &&
+                        !formControl.hasError('required')
+                    "
+                >
+                    Please enter a valid Number of Questions
+                </mat-error>
+                <mat-error *ngIf="formControl.hasError('required')">
+                    Number of Questions is <strong>required</strong>
+                </mat-error>
+            </mat-form-field>
+
+            <mat-form-field appearance="fill">
+                <mat-label>Game Type</mat-label>
+                <mat-select
+                    [formControl]="formControl"
+                    [errorStateMatcher]="matcher"
+                    [(ngModel)]="gameType"
+                >
+                    <mat-option value="multiple_choise"
+                        >Multiple Choise</mat-option
+                    >
+                    <mat-option value="true_false">True or False</mat-option>
+                </mat-select>
+
+                <mat-error *ngIf="formControl.hasError('required')"
+                    >You must make a selection</mat-error
+                >
+                <mat-error
+                    *ngIf="
+                        formControl.hasError('pattern') &&
+                        !formControl.hasError('required')
+                    "
+                >
+                    Your selection is invalid
+                </mat-error>
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+                <mat-label>Difficulty</mat-label>
+                <mat-select
+                    [formControl]="formControl"
+                    [errorStateMatcher]="matcher"
+                    [(ngModel)]="difficulty"
+                >
+                    <mat-option value="easy">Easy</mat-option>
+                    <mat-option value="medium">Medium</mat-option>
+                    <mat-option value="hard">Hard</mat-option>
+                </mat-select>
+
+                <mat-error *ngIf="formControl.hasError('required')"
+                    >You must make a selection</mat-error
+                >
+                <mat-error
+                    *ngIf="
+                        formControl.hasError('pattern') &&
+                        !formControl.hasError('required')
+                    "
+                >
+                    Your selection is invalid
+                </mat-error>
+            </mat-form-field>
+            <button
+                type="submit"
+                class="start"
+                *ngIf="!gameStarted"
+                (click)="newGame()"
+            >
+                START
+            </button>
+        </form>
+    </div>
+</div>

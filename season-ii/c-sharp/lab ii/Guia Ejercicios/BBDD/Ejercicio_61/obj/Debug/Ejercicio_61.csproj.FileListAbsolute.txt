@@ -1,0 +1,17 @@
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\BBDD\Ejercicio_61\bin\Debug\Ejercicio_61.exe.config
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\BBDD\Ejercicio_61\bin\Debug\Ejercicio_61.exe
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\BBDD\Ejercicio_61\bin\Debug\Ejercicio_61.pdb
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\BBDD\Ejercicio_61\obj\Debug\Ejercicio_61.csprojAssemblyReference.cache
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\BBDD\Ejercicio_61\obj\Debug\Ejercicio_61.Form1.resources
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\BBDD\Ejercicio_61\obj\Debug\Ejercicio_61.Properties.Resources.resources
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\BBDD\Ejercicio_61\obj\Debug\Ejercicio_61.csproj.GenerateResource.cache
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\BBDD\Ejercicio_61\obj\Debug\Ejercicio_61.csproj.CoreCompileInputs.cache
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\BBDD\Ejercicio_61\obj\Debug\Ejercicio_61.exe
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\BBDD\Ejercicio_61\obj\Debug\Ejercicio_61.pdb
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\BBDD\Ejercicio_61\bin\Debug\EntidadesDAO.dll
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\BBDD\Ejercicio_61\bin\Debug\CentralitaHerencia.dll
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\BBDD\Ejercicio_61\bin\Debug\EntidadesDAO.pdb
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\BBDD\Ejercicio_61\bin\Debug\CentralitaHerencia.pdb
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\BBDD\Ejercicio_61\obj\Debug\Ejercicio_61.Form2.resources
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\BBDD\Ejercicio_61\obj\Debug\Ejercicio_61.Form3.resources
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\BBDD\Ejercicio_61\obj\Debug\Ejercicio_61.csproj.CopyComplete

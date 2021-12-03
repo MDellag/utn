@@ -1,0 +1,13 @@
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\BBDD\EntidadesDAO\bin\Debug\EntidadesDAO.dll
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\BBDD\EntidadesDAO\bin\Debug\EntidadesDAO.pdb
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\BBDD\EntidadesDAO\bin\Debug\Ejercicio_58.dll
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\BBDD\EntidadesDAO\bin\Debug\ArchivoException.dll
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\BBDD\EntidadesDAO\bin\Debug\Ejercicio_58.pdb
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\BBDD\EntidadesDAO\bin\Debug\ArchivoException.pdb
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\BBDD\EntidadesDAO\obj\Debug\EntidadesDAO.csprojAssemblyReference.cache
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\BBDD\EntidadesDAO\obj\Debug\EntidadesDAO.csproj.CoreCompileInputs.cache
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\BBDD\EntidadesDAO\obj\Debug\EntidadesDAO.csproj.CopyComplete
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\BBDD\EntidadesDAO\obj\Debug\EntidadesDAO.dll
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\BBDD\EntidadesDAO\obj\Debug\EntidadesDAO.pdb
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\BBDD\EntidadesDAO\bin\Debug\CentralitaHerencia.dll
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\BBDD\EntidadesDAO\bin\Debug\CentralitaHerencia.pdb

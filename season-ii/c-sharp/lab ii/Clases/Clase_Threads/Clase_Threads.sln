@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30128.74
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clase_Threads", "Clase_Threads\Clase_Threads.csproj", "{BBA2FCA1-9BDE-4F55-9821-1C663B5004AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "test_Thrading", "test_Thrading\test_Thrading.csproj", "{7C28086E-B8AE-4598-AE7F-B91443C59FA6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BBA2FCA1-9BDE-4F55-9821-1C663B5004AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBA2FCA1-9BDE-4F55-9821-1C663B5004AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBA2FCA1-9BDE-4F55-9821-1C663B5004AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBA2FCA1-9BDE-4F55-9821-1C663B5004AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C28086E-B8AE-4598-AE7F-B91443C59FA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C28086E-B8AE-4598-AE7F-B91443C59FA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C28086E-B8AE-4598-AE7F-B91443C59FA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C28086E-B8AE-4598-AE7F-B91443C59FA6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3DABAB84-9DBC-4872-A46B-E9382687B398}
+	EndGlobalSection
+EndGlobal

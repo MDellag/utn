@@ -1,0 +1,7 @@
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Clases\Clase_Herencia\bin\Debug\Clase_Herencia.exe.config
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Clases\Clase_Herencia\bin\Debug\Clase_Herencia.exe
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Clases\Clase_Herencia\bin\Debug\Clase_Herencia.pdb
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Clases\Clase_Herencia\obj\Debug\Clase_Herencia.csprojAssemblyReference.cache
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Clases\Clase_Herencia\obj\Debug\Clase_Herencia.csproj.CoreCompileInputs.cache
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Clases\Clase_Herencia\obj\Debug\Clase_Herencia.exe
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Clases\Clase_Herencia\obj\Debug\Clase_Herencia.pdb

@@ -1,0 +1,15 @@
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\CentralTelefonica\CentralTelefonicaForm\bin\Release\CentralTelefonicaForm.exe.config
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\CentralTelefonica\CentralTelefonicaForm\bin\Release\CentralTelefonicaForm.exe
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\CentralTelefonica\CentralTelefonicaForm\bin\Release\CentralTelefonicaForm.pdb
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\CentralTelefonica\CentralTelefonicaForm\bin\Release\CentralitaHerencia.dll
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\CentralTelefonica\CentralTelefonicaForm\bin\Release\CentralitaHerencia.pdb
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\CentralTelefonica\CentralTelefonicaForm\obj\Release\CentralTelefonicaForm.csprojAssemblyReference.cache
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\CentralTelefonica\CentralTelefonicaForm\obj\Release\CentralTelefonicaForm.FrmMostrar.resources
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\CentralTelefonica\CentralTelefonicaForm\obj\Release\CentralTelefonicaForm.FormLlamador.resources
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\CentralTelefonica\CentralTelefonicaForm\obj\Release\CentralTelefonicaForm.FormMenu.resources
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\CentralTelefonica\CentralTelefonicaForm\obj\Release\CentralTelefonicaForm.Properties.Resources.resources
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\CentralTelefonica\CentralTelefonicaForm\obj\Release\CentralTelefonicaForm.csproj.GenerateResource.cache
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\CentralTelefonica\CentralTelefonicaForm\obj\Release\CentralTelefonicaForm.csproj.CoreCompileInputs.cache
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\CentralTelefonica\CentralTelefonicaForm\obj\Release\CentralTelefonicaForm.csproj.CopyComplete
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\CentralTelefonica\CentralTelefonicaForm\obj\Release\CentralTelefonicaForm.exe
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\CentralTelefonica\CentralTelefonicaForm\obj\Release\CentralTelefonicaForm.pdb

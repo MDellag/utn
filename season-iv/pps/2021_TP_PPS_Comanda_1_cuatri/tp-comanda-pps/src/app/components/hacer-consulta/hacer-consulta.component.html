@@ -1,0 +1,62 @@
+
+<ion-header>
+  <ion-toolbar class="ion-toolbar">
+    
+    <ion-title class="ion-title">CONSULTAS</ion-title>
+    <button class="volver"><ion-icon name="arrow-undo-outline" (click)="volver()"></ion-icon></button>
+  
+  </ion-toolbar>
+  
+</ion-header>
+
+<ion-content >
+  <div class="form">
+    <ion-grid class="gridChat">
+
+      <ion-row *ngFor = "let m of Mensajes">
+        
+          
+          <ion-col size="9"  [offset]="m.miMensaje ? 3: 0" [ngClass] = "{ 'mi-mensaje' : m.miMensaje, 'otro-mensaje' : !m.miMensaje}">
+          
+            <b [ngClass] = "{ 'mi-nombre' : m.miMensaje, 'otro-nombre' : !m.miMensaje}">{{m.tipo}}: {{m.nombreUsuario}}:</b><br><br>
+            <span>{{m.mensaje}}</span>
+
+            <div class="time ion-text-right"><br>{{m.creado?.toMillis() | date:'short'}}</div>
+          </ion-col>
+            
+
+      </ion-row>
+
+    </ion-grid>
+
+    
+  </div>
+
+  
+
+</ion-content>
+
+<ion-footer class="ion-footer">
+
+  <ion-toolbar color="light">
+    <ion-row class="ion-aling-items-center">
+      <ion-col size="10">
+        <input type="text"  name="MENSAJE" class="txtMensaje" placeholder="Escribe un mensaje" [(ngModel)]="mensaje"/>
+        
+
+      </ion-col>
+      <ion-col size="2">
+        <button class="btnMensaje" (click)="Enviar()" ><ion-icon name="paper-plane-outline" ></ion-icon></button>
+
+
+      </ion-col>
+
+
+
+    </ion-row>
+  </ion-toolbar>
+
+
+</ion-footer>
+
+

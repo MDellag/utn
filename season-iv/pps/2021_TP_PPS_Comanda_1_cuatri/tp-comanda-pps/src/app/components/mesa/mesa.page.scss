@@ -1,0 +1,125 @@
+ion-header{
+    --ion-background-color: linear-gradient(to bottom right, #d38124, #c44d09);
+    text-align: center;
+    --ion-font-family: "IowanOldStyleBlack";
+}
+
+ion-title{
+    color:white;
+    font-size: 6vw;
+}
+
+ion-back-button{
+    color:white;
+}
+
+ion-content{
+    
+    --ion-font-family: "IowanOldStyleBlack";
+    --background: url("../../../assets/images/sativa.jpg") no-repeat center / cover;
+
+}
+
+ion-icon{
+    color: linear-gradient(to bottom right, #d38124, #c44d09);
+    transform: scale(1.3);
+}
+
+ion-label{
+    color: black;
+    font-size: 25px;
+}
+
+ion-tab-bar{
+    --color-selected: #dd3f0f !important;
+}
+
+ion-card{
+    --ion-background-color: linear-gradient(to bottom right, #d38124, #c44d09);
+    text-align: center;
+    width: 90vw;
+    height: 79vh;
+    overflow: auto;
+    z-index: 9999;
+}
+
+ion-button{
+    --background: linear-gradient(to bottom right, #4395c4, #194ae9);
+}
+
+.producto{
+    background: url("../../../assets/images/sativa.jpg") no-repeat center / cover;
+    border: 1vw solid #dd3f0f;
+    margin-top: 5vw;
+    width: 90%;
+    border-radius: 3vw;
+}
+
+h6{
+    color: white;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+}
+
+.cuenta{
+    width: 70%;
+    background: linear-gradient(to bottom right, #4395c4, #194ae9);
+    border-radius: 5vw;
+}
+
+ion-slides{
+    height: 50vw;
+    --bullet-background:white;
+    --bullet-background-active: var(--ion-color-bordo);
+}
+
+.imgSlide{
+    border-radius: 5vw;
+}
+
+h3{
+    color: black;
+}
+
+h5{
+    color: white;
+}
+
+.cerrarSesion{
+    position: fixed;
+    top: 5%;
+    left: 5%;
+    z-index: 9999;
+    border-radius: 50%;
+}
+
+.atras{
+    transform: scale(1.5);
+    color: white;
+}
+
+.icono-escanear{
+    color: var(--ion-color-bordo);
+    transform: scale(8);
+    align-self: center;
+    justify-self: center;
+    grid-row: span 1;
+}
+
+.boton-escanear{
+    width: 50vw;
+    height: 20vh;
+    display: grid;
+}
+
+.footer-toolbar{
+    --ion-background-color: linear-gradient(to bottom right, #d38124, #c44d09);
+}
+
+.Consulta{
+    margin-left: 5%;
+}
+
+.Encuesta{
+    margin-left: 5%;
+}

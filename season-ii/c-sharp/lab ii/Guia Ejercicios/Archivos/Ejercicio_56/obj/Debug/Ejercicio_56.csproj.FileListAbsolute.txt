@@ -1,0 +1,15 @@
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\Archivos\Ejercicio_56\bin\Debug\Ejercicio_56.exe.config
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\Archivos\Ejercicio_56\bin\Debug\Ejercicio_56.exe
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\Archivos\Ejercicio_56\bin\Debug\Ejercicio_56.pdb
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\Archivos\Ejercicio_56\obj\Debug\Ejercicio_56.csprojAssemblyReference.cache
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\Archivos\Ejercicio_56\obj\Debug\Ejercicio_56.Notepad.resources
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\Archivos\Ejercicio_56\obj\Debug\Ejercicio_56.Properties.Resources.resources
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\Archivos\Ejercicio_56\obj\Debug\Ejercicio_56.csproj.GenerateResource.cache
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\Archivos\Ejercicio_56\obj\Debug\Ejercicio_56.csproj.CoreCompileInputs.cache
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\Archivos\Ejercicio_56\obj\Debug\Ejercicio_56.exe
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\Archivos\Ejercicio_56\obj\Debug\Ejercicio_56.pdb
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\Archivos\Ejercicio_56\bin\Debug\Ejercicio_58.dll
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\Archivos\Ejercicio_56\bin\Debug\ArchivoException.dll
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\Archivos\Ejercicio_56\bin\Debug\Ejercicio_58.pdb
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\Archivos\Ejercicio_56\bin\Debug\ArchivoException.pdb
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\Archivos\Ejercicio_56\obj\Debug\Ejercicio_56.csproj.CopyComplete

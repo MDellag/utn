@@ -1,0 +1,94 @@
+ <app-spinner *ngIf="isFetchingData"></app-spinner>
+<body class="container">
+
+  <form class="shadow">
+    <div class="messageContainer">
+      <h3>REGISTRO</h3>
+    </div>
+    <mat-form-field class="inputField">
+      <mat-label>@correo</mat-label>
+      <input
+        matInput
+        type="text"
+        [(ngModel)]="correo"
+        name="usernameForm"
+        required
+      />
+    </mat-form-field>
+
+    <mat-form-field class="inputField">
+      <mat-label>Contraseña</mat-label>
+      <input
+        matInput
+        type="password"
+        [(ngModel)]="password"
+        name="passwordForm"
+        required
+      />
+    </mat-form-field>
+
+    <mat-form-field class="inputField">
+      <mat-label>Nombre</mat-label>
+      <input
+        matInput
+        type="text"
+        [(ngModel)]="nombre"
+        name="nombreForm"
+        required
+      />
+    </mat-form-field>
+
+    <mat-form-field class="inputField">
+      <mat-label>Apellido</mat-label>
+      <input
+        matInput
+        type="text"
+        [(ngModel)]="apellido"
+        name="apellidoForm"
+        required
+      />
+    </mat-form-field>
+
+    <mat-form-field class="inputField">
+      <mat-label>DNI</mat-label>
+      <input matInput type="number" [(ngModel)]="dni" name="dniForm" required />
+    </mat-form-field>
+
+    <div class="messageContainer">
+      <div class="buttonContainer">
+        <button
+          mat-flat-button
+          color="primary"
+          type="submit"
+          style="background: linear-gradient(to bottom right, #d38124, #c44d09);"
+          (click)="registerUser()"
+        >
+          Registrarse
+        </button>
+
+        <button
+          class="qr"
+          mat-flat-button
+          color="primary"
+          type="submit"
+          style="background-color: #027c21"
+          (click)="scanCode()"
+        >
+          <ion-icon name="qr-code-sharp"></ion-icon>
+        </button>
+
+        <button
+          mat-flat-button
+          color="primary"
+          type="submit"
+          style="background: linear-gradient(to bottom right, #d38124, #c44d09);"
+          (click)="tomarFoto()"
+        >
+          Foto
+        </button>
+      </div>
+    </div>
+    <a [routerLink]="['/login']">Ingresar</a>
+  </form>
+  
+</body>

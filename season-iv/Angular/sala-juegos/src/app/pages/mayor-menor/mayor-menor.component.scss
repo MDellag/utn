@@ -1,0 +1,51 @@
+.gameBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+  background: rgb(4, 111, 94);
+  background: linear-gradient(
+    90deg,
+    rgba(4, 111, 94, 1) 0%,
+    rgba(2, 76, 154, 1) 35%,
+    rgba(8, 154, 143, 1) 100%
+  );
+  width: 500px;
+  height: 700px;
+}
+
+.numberContainer {
+  span {
+    color: #fff;
+    font-size: 265px;
+  }
+}
+
+button {
+  width: 100px;
+  height: 60px;
+
+  background: rgb(45, 4, 111);
+  background: linear-gradient(
+    90deg,
+    rgba(45, 4, 111, 1) 0%,
+    rgba(83, 2, 154, 1) 35%,
+    rgba(101, 8, 154, 1) 100%
+  );
+
+  margin: 10px;
+  .ic {
+    color: #fff;
+    font-size: 50px;
+  }
+}
+
+.score {
+  color: rgb(247, 178, 49);
+  font-size: 100px;
+  position: relative;
+  margin: 0 auto;
+  font-weight: bold;
+  margin-left: 45px;
+}

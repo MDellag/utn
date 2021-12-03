@@ -1,0 +1,33 @@
+<app-glass-spiner *ngIf="isFetchingData"></app-glass-spiner>
+<ion-header [translucent]="true">
+    <ion-toolbar>
+        <ion-title> Relevamiento Visual </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<!-- <div class="content"></div> -->
+<button class="menubtn" mat-mini-fab color="dark" [matMenuTriggerFor]="menu">
+    <mat-icon>menu</mat-icon>
+</button>
+<mat-menu #menu="matMenu">
+    <button mat-menu-item class="mat-menu-item" (click)="back()">
+        <mat-icon>exit_to_app</mat-icon>
+    </button>
+</mat-menu>
+<div class="content">
+    <ion-content>
+        <div class="test" *ngFor="let photo of photos">
+            <img src="{{ photo.photo }}" alt="" />
+            <div class="footerImg">
+                <div>
+                    <button>
+                        <mat-icon>favorite</mat-icon>{{ photo.likes }}
+                    </button>
+                    <span><b>Tipo:</b> {{ photo.type }}</span>
+                    <span><b>Autor:</b> {{ photo.author }}</span>
+                </div>
+                <span><b>Date:</b> {{ photo.date }}</span>
+            </div>
+        </div>
+    </ion-content>
+</div>

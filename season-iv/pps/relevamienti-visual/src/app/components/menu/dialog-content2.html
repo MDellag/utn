@@ -1,0 +1,32 @@
+<style>
+    button {
+        width: 100px;
+        height: 50px;
+        color: #fff;
+    }
+
+    .fail {
+        background-color: var(--fail-color);
+    }
+
+    .suc {
+        background-color: var(--success-color);
+    }
+    mat-dialog-actions {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+</style>
+<h2 mat-dialog-title>Tomar otra foto?</h2>
+<mat-dialog-content class="mat-typography">
+    <div class="modalDiv" *ngFor="let item of ">
+        <img src="{{item.dataUrl}}" alt="" />
+    </div>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+    <button class="fail" [mat-dialog-close]="true" (click)="addPhoto('no')">
+        No, subir la/s foto/s tomada/s
+    </button>
+    <button class="suc" mat-dialog-close (click)="addPhoto('yes')">Si</button>
+</mat-dialog-actions>

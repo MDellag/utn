@@ -1,0 +1,35 @@
+.box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.content {
+  width: 200px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  margin: 0 auto;
+}
+
+.boxButtons {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+
+  button {
+    width: 85px;
+    height: 30px;
+    background: rgb(98, 22, 159);
+    background: linear-gradient(
+      90deg,
+      rgba(98, 22, 159, 1) 0%,
+      rgba(56, 6, 112, 1) 35%,
+      rgba(56, 5, 92, 1) 100%
+    );
+    color: var(--main-theme-light);
+  }
+}

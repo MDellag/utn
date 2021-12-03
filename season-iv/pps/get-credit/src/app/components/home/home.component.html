@@ -1,0 +1,50 @@
+<div class="container">
+    <button
+        class="menubtn"
+        mat-mini-fab
+        color="dark"
+        [matMenuTriggerFor]="menu"
+    >
+        <mat-icon>menu</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+        <button mat-menu-item class="mat-menu-item" (click)="quit()">
+            <mat-icon>exit_to_app</mat-icon>
+        </button>
+    </mat-menu>
+    <div class="navHeader">
+        <h1>Carga de Credito</h1>
+    </div>
+
+    <div class="subheader">
+        <h1 class="h11">Saldo Disponible</h1>
+        <h2>Tipo de Cuenta: {{ typeUsuario[typeUser] }}</h2>
+    </div>
+    <div class="moneyCont">
+        <img src="assets/moneySimbol.svg" alt="pesosSVG" />
+        <h1>{{ ammount }}</h1>
+    </div>
+
+    <div class="contButtons">
+        <button
+            class="butns"
+            mat-flat-button
+            color="primary"
+            type="submit"
+            style="background-color: #eb9035"
+            (click)="scannQR()"
+        >
+            Escanear QR
+        </button>
+        <button
+            class="butns"
+            mat-flat-button
+            color="primary"
+            type="submit"
+            style="background-color: #eb9035"
+            (click)="reset()"
+        >
+            Restear Saldos
+        </button>
+    </div>
+</div>

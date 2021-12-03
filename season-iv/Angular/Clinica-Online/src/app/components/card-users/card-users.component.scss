@@ -1,0 +1,14 @@
+.userCards {
+  display: flex;
+  justify-content: center;
+
+  flex-wrap: wrap;
+  width: 100%;
+  .custm-card {
+    margin: 10px;
+  }
+  img {
+    width: 250px;
+    height: 200px;
+  }
+}

@@ -1,0 +1,22 @@
+<div class="contChart">
+    <canvas
+        baseChart
+        [datasets]="barChartData"
+        [labels]="barChartLabels"
+        [options]="barChartOptions"
+        [plugins]="barChartPlugins"
+        [chartType]="barChartType"
+        (chartClick)="openDialog($event)"
+    >
+    </canvas>
+</div>
+
+<button
+    mat-flat-button
+    color="primary"
+    type="submit"
+    style="background-color: var(--main-theme-color)"
+    (click)="back()"
+>
+    Volver
+</button>

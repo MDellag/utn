@@ -1,0 +1,67 @@
+<app-glass-spiner *ngIf="isFetchingData"></app-glass-spiner>
+<body class="container">
+    <ion-fab horizontal="end" vertical="top" slot="fixed">
+        <ion-fab-button color="dark">
+            <ion-icon name="person-circle-outline"></ion-icon>
+        </ion-fab-button>
+
+        <ion-fab-list style="margin-top: 110%">
+            <ion-fab-button color="light" (click)="insertarDatos('admin')">
+                <p style="font-family: 'Open Sans', sans-serif">ADM</p>
+            </ion-fab-button>
+            <ion-fab-button color="light" (click)="insertarDatos('guest')">
+                <p style="font-family: 'Open Sans', sans-serif">INV</p>
+            </ion-fab-button>
+            <ion-fab-button color="light" (click)="insertarDatos('user')">
+                <p style="font-family: 'Open Sans', sans-serif">USU</p>
+            </ion-fab-button>
+            <ion-fab-button color="light" (click)="insertarDatos('anonimo')">
+                <p style="font-family: 'Open Sans', sans-serif">ANO</p>
+            </ion-fab-button>
+            <ion-fab-button color="light" (click)="insertarDatos('tester')">
+                <p style="font-family: 'Open Sans', sans-serif">TEST</p>
+            </ion-fab-button>
+        </ion-fab-list>
+    </ion-fab>
+
+    <form class="shadow">
+        <div class="messageContainer">
+            <h3>LOGIN</h3>
+        </div>
+        <mat-form-field class="inputField">
+            <mat-label>@email</mat-label>
+            <input
+                matInput
+                type="text"
+                [(ngModel)]="username"
+                name="usernameForm"
+                required
+            />
+        </mat-form-field>
+
+        <mat-form-field class="inputField">
+            <mat-label>Contraseña</mat-label>
+            <input
+                matInput
+                type="password"
+                [(ngModel)]="password"
+                name="passwordForm"
+                required
+            />
+        </mat-form-field>
+
+        <div class="messageContainer">
+            <button
+                mat-flat-button
+                color="primary"
+                type="submit"
+                style="background-color: #f39c3f"
+                (click)="logInUser()"
+            >
+                Ingresar
+            </button>
+        </div>
+        <a [routerLink]="['/register']">Registrarse</a>
+    </form>
+</body>
+<router-outlet></router-outlet>

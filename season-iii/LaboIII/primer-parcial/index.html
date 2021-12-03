@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./scripts/main.js" type="module"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <img src="./images/drivenLogo.svg" alt="">
+        <nav>
+            <a href="./nosotros.html">Nosotros</a>
+            <a href="./anuncios.html">Anuncios</a>
+            <a href="./blog.html">Blog</a>
+            <a href="./contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <H1 id="firstHeader">Administracion</H1>
+    <img src="./images/bluecarHeader.jpg" alt="fotoAuto">
+    <form class="container">
+        <fieldset>
+            <legend>Informacion del Anuncio</legend>
+            <h4>TITULO:</h4>
+            <input type="text" name="txtTitulo" id="txtTitulo" placeholder="Titulo" required/> <br />
+            <h4> TRANSACCION: </h4>
+
+            <div class="divCheck">
+                <label for="rdoVenta"> <input type="radio" name="rdo" id="rdoVenta" value="Venta" class="checkMark"
+                        checked>Venta</label>
+                <label for="rdoAlquiler"> <input type="radio" name="rdo" id="rdoAlquiler" class="checkMark"
+                        value="Alquiler">Alquiler</label>
+            </div>
+
+            <h4>DESCRIPCION:</h4>
+            <input type="text" name="txtDescripcion" id="txtDescripcion" placeholder="Descripcion" required/> <br />
+            <h4>PRECIO:</h4> <br />
+            <input type="text" name="txtPrecio" id="txtPrecio" placeholder="Precio:" required/> <br />
+
+            <div class="divFieldset">
+                <div>
+                    <img src="./images/door.ico" alt="imgPuertas" class="imgVehiculo"> <input type="text"
+                        name="txtPuertas" id="txtPuertas" placeholder="Puertas:" required/>
+                </div>
+                <div>
+                    <img src="./images/speed.ico" alt="imgKms" class="imgVehiculo"> <input type="text" name="txtKMS"
+                        id="txtKMS" placeholder="KMs:" required/>
+                </div>
+                <div>
+                    <img src="./images/engine.ico" alt="imgPotencia" class="imgVehiculo"> <input type="text"
+                        name="txtPotencia" id="txtPotencia" placeholder="Potencia:" required/>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+    <div id="divBtn">
+        <div>
+            <Button id="btnGuardar">Guardar</Button>
+            <Button id="btnUpdate">Update</Button>
+            <Button id="btnBorrarPorID">Borrar Anuncio por ID</Button>
+            <Button id="btnBorrar">Borrar Todos los Anuncios</Button>
+        </div>
+    </div>
+
+    <div id="spinnerContainer"></div>   
+
+    <div class="container" id="divTabla"></div>
+
+    
+
+
+
+    <div id="footer">
+        <nav>
+            <a href="./nosotros.html">Nosotros</a>
+            <a href="./anuncios.html">Anuncios</a>
+            <a href="./blog.html">Blog</a>
+            <a href="./contacto.html">Contacto</a>
+        </nav>
+
+        <p>Todos los derechos reservados 2020 &copy;</p>
+    </div>
+
+</body>
+
+</html>

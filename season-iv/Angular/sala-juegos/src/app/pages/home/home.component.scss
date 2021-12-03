@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  // background: url('assets/images/wallpaper.jpg');
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: 200fr 200fr;
+}
+
+button {
+  margin: 5px;
+  width: 550px;
+  height: 400px;
+}
+
+.higherlower {
+  background: url('/assets/images/higherlower.jpg') no-repeat;
+  background-size: cover;
+}
+
+.preguntados {
+  background: url('/assets/images/preguntados.jpg') no-repeat;
+  background-size: cover;
+}
+
+.ahorcado {
+  background: url('/assets/images/hangman.jpeg') no-repeat;
+  background-size: cover;
+}
+
+.owngame {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 65px;
+  color: #fff;
+  background: url('/assets/images/gameBgr.png') no-repeat;
+  background-size: 550px 400px;
+}

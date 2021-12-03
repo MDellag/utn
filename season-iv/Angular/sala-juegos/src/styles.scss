@@ -1,0 +1,61 @@
+/* ---- Angular Material Links for animations an icons*/
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+@import 'https://fonts.googleapis.com/icon?family=Material+Icons';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+:root {
+  --main-theme-dark: #11101d;
+  --main-theme-light: #ffffff;
+  --fail-color: rgb(120, 6, 58)
+    linear-gradient(
+      90deg,
+      rgba(120, 6, 58, 1) 0%,
+      rgba(148, 3, 35, 1) 35%,
+      rgba(181, 3, 63, 1) 100%
+    );
+  --success-color: rgb(6, 111, 4)
+    linear-gradient(
+      90deg,
+      rgba(6, 111, 4, 1) 0%,
+      rgba(2, 154, 7, 1) 35%,
+      rgba(8, 154, 39, 1) 100%
+    );
+  --main-font: 'Poppins', sans-serif;
+}
+
+* {
+  font-family: var(--main-font);
+}
+
+.red-snackbar {
+  background: var(--fail-color);
+  color: white;
+  .mat-simple-snackbar-action {
+    color: white;
+  }
+}
+
+.success-snackbar {
+  background: var(--success-color);
+  color: white;
+  .mat-simple-snackbar-action {
+    color: white;
+  }
+}
+
+.gradientRed {
+  mat-dialog-container {
+    background: var(--fail-color);
+    color: #ffffff;
+  }
+}
+
+.gradientGreen {
+  mat-dialog-container {
+    background: var(--success-color);
+    color: #ffffff;
+  }
+}
+
+.background {
+  background: url('assets/images//wallpaper.jpg') no-repeat;
+}

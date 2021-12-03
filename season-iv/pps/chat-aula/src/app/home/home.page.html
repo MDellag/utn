@@ -1,0 +1,23 @@
+<ion-header [translucent]="true">
+    <ion-toolbar>
+        <ion-title> Chat en el Aula </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<!-- <div class="content"></div> -->
+<button class="menubtn" mat-mini-fab color="dark" [matMenuTriggerFor]="menu">
+    <mat-icon>menu</mat-icon>
+</button>
+<mat-menu #menu="matMenu">
+    <!-- <button mat-menu-item class="mat-menu-item" (click)="myPhotos()">
+        <mat-icon>photo_library</mat-icon>
+    </button> -->
+    <button mat-menu-item class="mat-menu-item" (click)="logOut()">
+        <mat-icon>exit_to_app</mat-icon>
+    </button>
+</mat-menu>
+
+<div class="content">
+    <button class="clasea" (click)="ir('a')">PPS-4A</button>
+    <button class="claseb" (click)="ir('b')">PPS-4B</button>
+</div>

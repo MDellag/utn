@@ -1,0 +1,52 @@
+<style>
+    button {
+        width: 100px;
+        height: 50px;
+        color: #fff;
+    }
+
+    .fail {
+        background-color: var(--fail-color);
+    }
+
+    .suc {
+        background-color: var(--success-color);
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .modalContent {
+        height: 500px;
+        width: 350px;
+    }
+    .modalDiv {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 500px;
+        width: 350px;
+    }
+    mat-dialog-actions {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    img {
+        width: 335px;
+        height: 475px;
+    }
+</style>
+<h2 mat-dialog-title>Foto</h2>
+<mat-dialog-content class="modalContent">
+    <div class="modalDiv">
+        <img src="{{imageToShow}}" alt="" />
+    </div>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+    <button class="fail" [mat-dialog-close]="true" (click)="viewPhoto('no')">
+        Cerrar
+    </button>
+</mat-dialog-actions>

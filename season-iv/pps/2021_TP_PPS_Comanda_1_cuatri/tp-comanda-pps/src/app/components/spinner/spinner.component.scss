@@ -1,0 +1,30 @@
+.spinnerContainer{
+    position: absolute;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    z-index: 999999;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(200, 200, 255, 0);
+    backdrop-filter: blur(0.7px) saturate(40%) contrast(60%) brightness(35%);
+}
+
+.spinner{
+    animation-name: spinning;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    
+}
+
+img{
+    width: 100px;
+    height: 100px;
+}
+
+@keyframes spinning {
+    from { transform: rotate(0deg) }
+    to { transform: rotate(360deg) }
+  }

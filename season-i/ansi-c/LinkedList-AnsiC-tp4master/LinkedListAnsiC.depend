@@ -1,0 +1,64 @@
+# depslib dependency file v1.0
+1579737532 source:c:\users\nehl\desktop\linkedlistansic\main.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Input.h"
+	"FileController.h"
+
+1579737755 source:c:\users\nehl\desktop\linkedlistansic\linkedlist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"LinkedList.h"
+
+1579737781 c:\users\nehl\desktop\linkedlistansic\linkedlist.h
+
+1579737300 source:c:\users\nehl\desktop\linkedlistansic\clientes.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"clientes.h"
+	"validaciones.h"
+	"Input.h"
+
+1579736939 c:\users\nehl\desktop\linkedlistansic\clientes.h
+
+1579737162 c:\users\nehl\desktop\linkedlistansic\validaciones.h
+
+1579737190 c:\users\nehl\desktop\linkedlistansic\input.h
+
+1579737182 source:c:\users\nehl\desktop\linkedlistansic\input.c
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	"validaciones.h"
+
+1579737150 source:c:\users\nehl\desktop\linkedlistansic\validaciones.c
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	"validaciones.h"
+
+1579737035 source:c:\users\nehl\desktop\linkedlistansic\filecontroller.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<ctype.h>
+	<string.h>
+	"LinkedList.h"
+	"clientes.h"
+	"Parser.h"
+	"Input.h"
+	"validaciones.h"
+
+1579737092 c:\users\nehl\desktop\linkedlistansic\parser.h
+
+1579737016 c:\users\nehl\desktop\linkedlistansic\filecontroller.h
+
+1579737082 source:c:\users\nehl\desktop\linkedlistansic\parser.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"clientes.h"
+

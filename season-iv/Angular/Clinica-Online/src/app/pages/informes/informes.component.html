@@ -1,0 +1,75 @@
+<div class="logcontainer">
+    <div class="header">
+        <h3>LOGS</h3>
+        <button mat-raised-button color="primary" (click)="exportLogsCsv()">
+            Exportar CSV
+        </button>
+    </div>
+    <table mat-table [dataSource]="logsList" class="mat-elevation-z8">
+        <!-- Email Column -->
+        <ng-container matColumnDef="email">
+            <th mat-header-cell *matHeaderCellDef>Email</th>
+            <td mat-cell *matCellDef="let element">{{ element.email }}</td>
+        </ng-container>
+
+        <!-- Day Column -->
+        <ng-container matColumnDef="day">
+            <th mat-header-cell *matHeaderCellDef>Dia</th>
+            <td mat-cell *matCellDef="let element">
+                {{ element.date | unixToDay }}
+            </td>
+        </ng-container>
+
+        <!-- Time Column -->
+        <ng-container matColumnDef="time">
+            <th mat-header-cell *matHeaderCellDef>Hora</th>
+            <td mat-cell *matCellDef="let element">
+                {{ element.date | unixToHour }}
+            </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+    </table>
+    <mat-progress-bar mode="indeterminate" *ngIf="fetching"></mat-progress-bar>
+</div>
+
+<div class="charts">
+    <mat-form-field appearance="fill" class="range">
+        <mat-label>Ingrese un rango de fechas</mat-label>
+        <mat-date-range-input [rangePicker]="picker">
+            <input
+                matStartDate
+                [(ngModel)]="range.start"
+                placeholder="Start date"
+            />
+            <input
+                matEndDate
+                [(ngModel)]="range.end"
+                (ngModelChange)="onRangeChange()"
+                placeholder="End date"
+            />
+        </mat-date-range-input>
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-date-range-picker #picker></mat-date-range-picker>
+    </mat-form-field>
+    <br />
+    <br />
+    <br />
+    <app-chart-turn-speciality></app-chart-turn-speciality>
+    <br />
+    <app-chart-turn-day></app-chart-turn-day>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <app-chart-turn-specialists></app-chart-turn-specialists>
+
+    <br />
+    <br />
+    <app-chart-turn-finished-by-specialist></app-chart-turn-finished-by-specialist>
+</div>

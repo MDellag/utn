@@ -1,0 +1,16 @@
+{
+  "name": "crud-local",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "json-server": "^0.16.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "",
+    "start" : "json-server -d 2000 -w db.json"
+  },
+  "author": "",
+  "license": "ISC"
+}

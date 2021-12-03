@@ -1,0 +1,118 @@
+.mi-mensaje{
+    padding: 10px;
+    border-radius: 10px 10px 0px 10px;
+    margin-bottom: 4px;
+    white-space: pre-wrap;
+    background: rgb(223, 126, 36);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    color: #fff;
+
+}
+
+.otro-mensaje{
+
+    padding: 10px;
+    border-radius: 10px 10px 10px 0px;
+    margin-bottom: 4px;
+    white-space: pre-wrap;
+    background: rgb(212, 171, 34);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    color: #fff;
+
+}
+.mi-nombre{
+    visibility: hidden;
+}
+
+.form{
+    width: 100%;
+    height: 100%;
+}
+
+.gridChat{
+    width: 95%;
+    height: 80%;
+}
+
+
+
+.divMensaje{
+    
+    width: 100%;
+    height: 20%;
+    
+}
+
+.txtMensaje{
+   
+    height: 90%;
+    width: 90%;
+    border-radius: 12px;
+    border: solid rgb(223, 126, 36) 1px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    
+    
+    
+}
+
+.btnMensaje{
+    position: relative;
+    z-index: 9999999;
+    margin-left: 5%;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    border: solid rgb(223, 126, 36) 1px;
+    background: rgb(223, 126, 36);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+
+    
+
+}
+
+ion-icon {
+    font-size: 20px;
+}
+
+
+.ion-toolbar{
+    --background: linear-gradient(to bottom right, rgb(212, 171, 34), rgb(223, 126, 36));
+    --color: #fff;
+    text-align: center;
+    
+}
+
+.ion-title{
+    text-shadow: 1px 1px 2px black;
+    font-size: 40px;
+}
+
+.time{
+    color: rgb(240, 231, 231);
+    font-size: 12px;
+}
+
+
+.volver{
+    
+    position: relative;
+    
+    
+    margin-left: -80%;
+    margin-bottom: 2%;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    border: white 1px;
+    background: white;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.5); 
+    font-weight: bold;
+    
+   
+
+}
+
+ion-icon {
+    font-size: 20px;
+}

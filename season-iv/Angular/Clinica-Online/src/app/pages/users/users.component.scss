@@ -1,0 +1,54 @@
+table {
+  width: 100%;
+  min-width: 1000px;
+  margin-top: 75px;
+  img {
+    width: 50px;
+    height: 50px;
+    margin-left: 4px;
+  }
+}
+
+.export {
+  display: block;
+  margin: auto;
+}
+
+form {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  max-width: 1700px;
+
+  height: 350px;
+
+  button {
+    width: 150px;
+    height: 50px;
+    font-weight: bold;
+    font-family: var(--main-font);
+  }
+
+  fieldset {
+    border-radius: 20px;
+    legend {
+      font-family: var(--main-font);
+      font-weight: bold;
+      padding: 10px;
+    }
+  }
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  // justify-content: space-around;
+  align-items: center;
+}
+
+::ng-deep .mat-form-field {
+  margin: 15px;
+  width: 300px;
+}

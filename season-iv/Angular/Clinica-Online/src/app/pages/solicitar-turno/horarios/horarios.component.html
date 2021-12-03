@@ -1,0 +1,37 @@
+<div>
+    <div>
+        <nav aria-label="Page navigation example">
+            <ul class="pagination">
+                <li
+                    class="page-item"
+                    *ngFor="
+                        let item of listToDisplay.list
+                            | slice: 0:finalDateList.length;
+                        index as i
+                    "
+                >
+                    <button class="page-link" (click)="goToDay(i)">
+                        {{ i + 1 }}
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="countriesbtns">
+        <div class="inputs" *ngFor="let time of listToDisplay.list">
+            <input
+                type="radio"
+                class="btn-check"
+                name="btnradio"
+                id="{{ time }}"
+                autocomplete="off"
+                (click)="handleDateChosen(time)"
+            />
+
+            <label class="btn btn-outline-primary" for="{{ time }}">
+                {{ time }}</label
+            >
+        </div>
+    </div>
+</div>

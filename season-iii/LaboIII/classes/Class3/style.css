@@ -1,0 +1,199 @@
+header {
+  display: flex;
+  height: 1000px;
+  background-image: url("./images/header.jpg");
+
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+header a {
+  position: relative;
+  left: 5%;
+  top: 50px;
+}
+
+header nav {
+  width: 100%;
+  height: 100px;
+}
+
+header nav a {
+  position: relative;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-right: 50px;
+  color: #ffffff;
+  font: bold;
+  text-decoration: none;
+  left: 70%;
+}
+
+header h1 {
+  color: #ffffff;
+  position: relative;
+  top: 60%;
+  left: -70%;
+  font-size: 250%;
+}
+
+/* ---------------------------------------------------- */
+
+section h2 {
+  display: flex;
+  justify-content: center;
+  font-size: 250%;
+}
+
+section div {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+section div h3 {
+  display: flex;
+  justify-content: center;
+}
+
+section div div {
+  display: flex;
+  flex-direction: column;
+}
+
+section div div p {
+  width: 500px;
+}
+
+/* -------------------------------------- */
+
+main h2 {
+  display: flex;
+  justify-content: center;
+  font-size: 250%;
+}
+
+main div {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 50px;
+}
+
+main a {
+  display: flex;
+  justify-content: flex-end;
+}
+
+main div article {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  justify-content: center;
+}
+
+main article img {
+  width: 450px;
+  height: 450px;
+}
+
+main article h3,
+main article p {
+  display: flex;
+  justify-content: center;
+}
+
+main div article a {
+  position: relative;
+  left: 25%;
+  justify-content: center;
+  text-decoration: none;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #a83905;
+  color: #ffffff;
+  font-size: 120%;
+  width: 200px;
+}
+
+#dolar {
+  font-size: 200%;
+  font-weight: bold;
+  color: #03990f;
+}
+
+main a {
+  position: relative;
+  justify-content: center;
+  left: 90%;
+  top: 20px;
+  text-decoration: none;
+  color: white;
+  background-color: #03990f;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 100px;
+}
+
+/* -------------------------------- */
+
+#casadeSuenios {
+  background-image: url("./images/encuentra.jpg");
+  height: 675px;
+}
+
+#casadeSuenios h2,
+#casadeSuenios p {
+  color: #ffffff;
+
+  position: relative;
+  justify-content: flex-start;
+  top: 20%;
+  bottom: 50%;
+  left: 2%;
+}
+
+#casadeSuenios h2 {
+  font-size: 250%;
+  margin-bottom: 200px;
+}
+
+#casadeSuenios p {
+  font-size: 150%;
+}
+
+#casadeSuenios a {
+  position: relative;
+  justify-content: flex-start;
+  top: 35%;
+  left: 5%;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: #ffffff;
+  font-size: 150%;
+  background-color: #a83905;
+  text-decoration: none;
+}
+
+/* -------------------------------------- */
+
+#nuestroBlog img {
+  width: 400px;
+}
+
+#nuestroBlog  {
+  display: flex;
+  flex-direction: column;
+  flex-wrap:  wrap;
+  align-content: space-between;
+  justify-content: center;
+
+  width: 800px;
+  height: 400px;
+}

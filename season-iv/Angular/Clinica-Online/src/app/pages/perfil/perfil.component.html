@@ -1,0 +1,47 @@
+<mat-card class="example-card">
+    <mat-card-header>
+        <div mat-card-avatar class="example-header-image" appProfilePhoto></div>
+        <mat-card-title>{{ user.lastname }} {{ user.name }}</mat-card-title>
+        <mat-card-subtitle>{{ user.type }}</mat-card-subtitle>
+        <!-- TODO : create Directive or PIPE to traduce or.. somth-->
+    </mat-card-header>
+    <img mat-card-image src="{{ photo }}" alt="Photo" />
+    <button
+        mat-mini-fab
+        class="btnNext"
+        color="accent"
+        aria-label="nextPhoto"
+        *ngIf="user.photo.length > 1"
+        (click)="changePhoto()"
+    >
+        >
+    </button>
+    <mat-card-content>
+        <p>
+            Dni: <b>{{ user.dni }}</b>
+        </p>
+        <p>
+            Email: <b> {{ user.email }}</b>
+        </p>
+        <p *ngIf="user.type === 'SPECIALIST'">
+            Especialidades: <b>{{ user.especialidad }}</b>
+        </p>
+        <p *ngIf="user.type === 'PATIENT'">
+            Obra Social: <b>{{ user.obraSocial }}</b>
+        </p>
+
+        <p *ngIf="user.type === 'SPECIALIST'">
+            Disponibilidad:
+            <b>{{ disponibilidad.from }} - {{ disponibilidad.to }}</b>
+            <button
+                mat-flat-button
+                color="accent"
+                (click)="changeDisponibility()"
+            >
+                cambiar disponibilidad
+            </button>
+        </p>
+    </mat-card-content>
+</mat-card>
+
+<app-history [dni]="user.dni" *ngIf="user.type === 'PATIENT'"></app-history>

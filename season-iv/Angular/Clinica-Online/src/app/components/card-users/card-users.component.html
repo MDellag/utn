@@ -1,0 +1,67 @@
+<div class="userCards">
+    <div
+        class="card custm-card"
+        style="width: 18rem"
+        *ngFor="let user of users"
+    >
+        <img
+            [src]="user.photo[0]"
+            class="card-img-top"
+            alt="..."
+            (click)="handleSelected(user)"
+            data-bs-toggle="tooltip"
+            data-bs-placement="top"
+            title="Click para Descargar CSV con datos de los TURNOS"
+        />
+        <div class="card-body">
+            <h5 class="card-title">{{ user.name }} {{ user.lastname }}</h5>
+            <p class="card-text" *ngIf="user.especialidad!.length > 0">
+                Especialidades: <b>{{ user.especialidad }}</b>
+            </p>
+            <p class="card-text" *ngIf="user.obraSocial">
+                Obra Social: <b> {{ user.obraSocial }}</b>
+            </p>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                    Email: <b>{{ user.email }}</b>
+                </li>
+                <li class="list-group-item">
+                    Tipo:
+                    <b>
+                        {{
+                            user.type === 'ADMIN'
+                                ? 'Administrador'
+                                : user.type === 'PATIENT'
+                                ? 'Paciente'
+                                : 'Especialista'
+                        }}</b
+                    >
+                </li>
+                <li class="list-group-item">
+                    Dni: <b>{{ user.dni }}</b>
+                </li>
+                <li class="list-group-item">
+                    Habilitado: <b>{{ user.approved ? 'Si' : 'No' }}</b>
+                </li>
+            </ul>
+        </div>
+        <div class="card-body">
+            <button
+                *ngIf="!user.approved"
+                type="button"
+                class="btn btn-success"
+                (click)="handleEnableDisable(user.dni)"
+            >
+                Habilitar
+            </button>
+            <button
+                *ngIf="user.approved"
+                type="button"
+                class="btn btn-danger"
+                (click)="handleEnableDisable(user.dni)"
+            >
+                Deshabilitar
+            </button>
+        </div>
+    </div>
+</div>

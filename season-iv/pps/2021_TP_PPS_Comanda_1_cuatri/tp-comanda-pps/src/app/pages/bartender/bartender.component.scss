@@ -1,0 +1,68 @@
+body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    background: url("../../../assets/images/sativa.jpg") no-repeat center / cover;
+  }
+  
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    font-size: 140%;
+    border-style: solid;
+    background: linear-gradient(to bottom right, #d38124, #c44d09);
+    color: #fff;
+    margin-top: 15px;
+  }
+  
+  .confirm {
+    margin-right: 13px;
+  background: linear-gradient(to bottom right, #4cf191, #033f17);
+  color: #fff;
+  padding: 5px;
+  font-size: 85%;
+  z-index: 999999;
+  border-radius: 8px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+  }
+  
+  .item {
+    margin-left: 13px;
+    // border-style: solid;
+    padding: 7px;
+    width: auto;
+    min-width: 200px;
+    max-width: 300px;
+    text-align: start;
+  }
+  
+  h1 {
+    font-size: 210%;
+    color: #fff;
+    text-align: center;
+  }
+  .heade {
+    position: fixed;
+    top: 0;
+    background: linear-gradient(to bottom right, #d38124, #c44d09);
+    width: 100%;
+  }
+  
+  .pedidos {
+    width: 100%;
+    margin-top: 75px;
+  }
+  
+  .noPedidos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }

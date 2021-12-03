@@ -1,0 +1,12 @@
+<div class="container">
+    <canvas #draw></canvas>
+
+    <div class="word">
+        <span *ngFor="let letr of encryptedWord">{{ letr }}</span>
+    </div>
+    <div class="teclas">
+        <button *ngFor="let letra of teclado" (click)="addLetter(letra)">
+            {{ letra }}
+        </button>
+    </div>
+</div>

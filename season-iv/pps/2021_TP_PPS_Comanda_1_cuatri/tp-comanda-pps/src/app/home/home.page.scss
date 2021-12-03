@@ -1,0 +1,105 @@
+#container {
+  text-align: center;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#container p {
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #8c8c8c;
+
+  margin: 0;
+}
+
+#container a {
+  text-decoration: none;
+}
+
+.header{
+  display: flex;
+  flex-direction: row;
+}
+
+.cuerpo{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  background: url("../../assets/images/sativa.jpg") no-repeat center / cover;
+
+  img{
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+  }
+}
+
+#name{
+  text-align: center;
+}
+
+.controladorBotones{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  
+
+}
+
+.qr {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  text-shadow: 1px 1px 2px black;
+  font-weight: bold;
+ 
+  background: linear-gradient(to bottom right, #4cf191, #033f17);
+  margin-right: 5%;
+}
+
+.mesa {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  text-shadow: 1px 1px 2px black;
+  font-weight: bold;
+  font-size: 120%;
+  background: linear-gradient(to bottom right, #4cf191, #033f17);
+  // margin-left: 5%;
+  align-items: center;
+  text-align:center;
+}
+
+.text{
+  display: flex; 
+  flex-direction:column;
+  justify-content:center;
+  align-items: center;
+}
+
+ion-toolbar{
+  
+  text-align: center;
+  --ion-background-color: linear-gradient(to bottom right, #d38124, #c44d09);
+}
+
+ion-title{
+  text-align: center;
+  align-items: center;
+  color:white;
+  font-size:large;
+  font-family: IowanOldStyleBlack;
+}

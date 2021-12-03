@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+        var array = [];
+        var array2 = ["enana", "tokzi", "pequeña" ];
+
+        //pasa elemento por elemento, no se pasa el array de una
+        //como en otros lenguajes
+        array.push(...array2);
+        console.log(array);
+
+        //suma todos los elementos que se le pase como parametro
+        function sumar(...c){
+            let suma = 0;
+            c.forEach(element => {
+                suma += element;
+            });
+            return suma;
+        }
+
+        //console.log(sumar(1,2,3,4,5,6));
+
+        const js = [
+            {
+            "name": "qqq",
+            "apell": "www",
+            "dni": "1111"
+         },
+         {
+            "name": "eee",
+            "apell": "qqq",
+            "dni": "2222"
+         },
+         {
+            "name": "rrr",
+            "apell": "aaa",
+            "dni": "3333"
+         },
+         {
+            "name": "sss",
+            "apell": "ddd",
+            "dni": "4444"
+         }
+        ];
+
+        const js2 = [
+            {
+            "name": "ggg",
+            "apell": "www",
+            "dni": "555"
+         },
+         {
+            "name": "yyy",
+            "apell": "qqq",
+            "dni": "666"
+         },
+         {
+            "name": "uuu",
+            "apell": "aaa",
+            "dni": "777"
+         },
+         {
+            "name": "mmm",
+            "apell": "ddd",
+            "dni": "888"
+         }
+        ];
+
+        var jsarr = [];
+         //codigo para filtrar 
+        js2.forEach(per => {
+            if(!js.some(rule => rule.name === per.name))
+         {  
+              jsarr.push(per); 
+        }
+        });
+
+        console.log(jsarr);
+
+
+        var btn = document.createElement("button");
+        document.body.appendChild(btn);
+
+    </script>
+</body>
+</html>

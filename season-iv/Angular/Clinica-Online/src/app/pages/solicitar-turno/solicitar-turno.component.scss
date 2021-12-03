@@ -1,0 +1,59 @@
+::ng-deep .mat-form-field {
+  margin: 15px;
+  width: 300px;
+}
+
+.cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.card {
+  min-width: 300px;
+  max-width: 450px;
+
+  .mat-img {
+    padding: 10px;
+  }
+
+  .item {
+    color: #850b91;
+    margin-left: 7px;
+  }
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  li {
+    margin: 10px;
+    font-size: 130%;
+  }
+}
+
+.countriesbtns {
+  display: flex;
+  justify-content: center;
+
+  flex-wrap: wrap;
+  width: 100%;
+
+  input {
+    display: inline;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+    width: 250px;
+    height: 75px;
+  }
+
+  img {
+    width: 80px;
+    height: 50px;
+  }
+}

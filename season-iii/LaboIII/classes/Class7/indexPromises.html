@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function sumar(a, b) {
+            return new Promise((resolve, reject) => {
+
+                let suma;
+                setTimeout(() => {
+                    if (typeof a !== "number" || typeof b !== "number") {
+                        reject({ error: "parametros no numericos" })
+                    }
+                    else {
+                        suma = a + b;
+                        resolve(suma);
+                    }
+                }, 2000);
+            });
+        }
+
+        function multiplicar(a, b) {
+
+            return new Promise((resolve, reject) => {
+
+                let suma;
+                setTimeout(() => {
+                    if (typeof a !== "number" || typeof b !== "number") {
+                        reject({ error: "parametros no numericos" })
+                    }
+                    else {
+                        suma = a * b;
+                        console.log(suma);
+                        resolve(suma);
+                    }
+                }, 2000);
+            });
+        }
+
+        function producto(a) {
+
+            return new Promise((resolve, reject) => {
+
+                let suma;
+                setTimeout(() => {
+                    if (typeof a !== "number" || typeof b !== "number") {
+                        reject({ error: "parametros no numericos" })
+                    }
+                    else {
+                        suma = a * a;
+                        console.log(suma);
+                        resolve(suma);
+                    }
+                }, 2000);
+            });
+        }
+
+
+
+        sumar(7, 12).then((e)=>{
+            console.log(e);
+        })
+    </script>
+</body>
+
+</html>

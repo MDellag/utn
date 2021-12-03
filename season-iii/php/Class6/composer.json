@@ -1,0 +1,20 @@
+{
+  "name": "mdellag/class6",
+  "description": "",
+  "authors": [
+    {
+      "name": "Nehlk",
+      "email": "slek.dev@outlook.com"
+    }
+  ],
+  "require": {
+    "firebase/php-jwt": "^5.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "Firebase\\JWT\\": "src",
+      "Clases\\": "clases",
+      "DB\\": "database"
+    }
+  }
+}

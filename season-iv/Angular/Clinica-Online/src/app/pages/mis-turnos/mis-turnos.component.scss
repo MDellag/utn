@@ -1,0 +1,26 @@
+table {
+  width: 100%;
+  min-width: 1000px;
+  margin-top: 75px;
+  margin-left: 6rem;
+}
+::ng-deep .mat-form-field {
+  margin: 15px;
+  width: 300px;
+}
+
+.pending {
+  color: #dd830d;
+}
+
+.rejected {
+  color: #c21003;
+}
+
+.done {
+  color: #048d0b;
+}
+
+.inputField {
+  margin-left: 7rem;
+}

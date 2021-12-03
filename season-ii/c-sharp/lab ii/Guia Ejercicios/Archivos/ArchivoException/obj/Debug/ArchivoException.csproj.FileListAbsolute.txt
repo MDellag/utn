@@ -1,0 +1,6 @@
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\Archivos\ArchivoException\bin\Debug\ArchivoException.dll
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\Archivos\ArchivoException\bin\Debug\ArchivoException.pdb
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\Archivos\ArchivoException\obj\Debug\ArchivoException.csprojAssemblyReference.cache
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\Archivos\ArchivoException\obj\Debug\ArchivoException.csproj.CoreCompileInputs.cache
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\Archivos\ArchivoException\obj\Debug\ArchivoException.dll
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\Archivos\ArchivoException\obj\Debug\ArchivoException.pdb

@@ -1,0 +1,105 @@
+<mat-card class="example-result-card">
+    <mat-card-content>
+        <h2>Encuesta sobre el Especialista</h2>
+        <br />
+        <br />
+
+        <div
+            class="example-label-container"
+            [class]="'example-label-horizontal'"
+        >
+            <label id="example-name-label" class="example-name-label"
+                >Disponibilidad</label
+            >
+            <button
+                mat-mini-fab
+                color="accent"
+                aria-label="Example icon button with a plus one icon"
+                class="example-value-label btn-label"
+                *ngIf="disponibilidad"
+            >
+                {{ disponibilidad }}
+            </button>
+            <!-- <label class="example-value-label">{{ disponibilidad }}</label> -->
+        </div>
+        <mat-slider
+            class="example-margin"
+            [max]="max"
+            [min]="min"
+            [step]="1"
+            [thumbLabel]="thumbLabel"
+            [tickInterval]="getSliderTickInterval()"
+            [(ngModel)]="disponibilidad"
+            aria-labelledby="example-name-label"
+        >
+        </mat-slider>
+
+        <div
+            class="example-label-container"
+            [class]="'example-label-horizontal'"
+        >
+            <label id="example-name-label" class="example-name-label"
+                >Trato con el Paciente</label
+            >
+            <button
+                mat-mini-fab
+                color="accent"
+                aria-label="Example icon button with a plus one icon"
+                class="example-value-label btn-label"
+                *ngIf="trato"
+            >
+                {{ trato }}
+            </button>
+            <!-- <label class="example-value-label">{{ trato }}</label> -->
+        </div>
+        <mat-slider
+            class="example-margin"
+            [max]="max"
+            [min]="min"
+            [step]="1"
+            [thumbLabel]="thumbLabel"
+            [tickInterval]="getSliderTickInterval()"
+            [(ngModel)]="trato"
+            aria-labelledby="example-name-label"
+        >
+        </mat-slider>
+
+        <div
+            class="example-label-container"
+            [class]="'example-label-horizontal'"
+        >
+            <label id="example-name-label" class="example-name-label"
+                >Conocimiento</label
+            >
+            <button
+                mat-mini-fab
+                color="accent"
+                aria-label="Example icon button with a plus one icon"
+                class="example-value-label btn-label"
+                *ngIf="conocimiento"
+            >
+                {{ conocimiento }}
+            </button>
+            <!-- <label class="example-value-label">{{ conocimiento }}</label> -->
+        </div>
+        <mat-slider
+            class="example-margin"
+            [max]="max"
+            [min]="min"
+            [step]="1"
+            [thumbLabel]="thumbLabel"
+            [tickInterval]="getSliderTickInterval()"
+            [(ngModel)]="conocimiento"
+            aria-labelledby="example-name-label"
+        >
+        </mat-slider>
+    </mat-card-content>
+    <button
+        mat-raised-button
+        color="accent"
+        class="btnSend"
+        (click)="closeDialogMessage()"
+    >
+        Enviar
+    </button>
+</mat-card>

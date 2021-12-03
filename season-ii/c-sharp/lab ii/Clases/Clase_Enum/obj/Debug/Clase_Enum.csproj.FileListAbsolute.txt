@@ -1,0 +1,7 @@
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Clases\Clase_Enum\bin\Debug\Clase_Enum.exe.config
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Clases\Clase_Enum\bin\Debug\Clase_Enum.exe
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Clases\Clase_Enum\bin\Debug\Clase_Enum.pdb
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Clases\Clase_Enum\obj\Debug\Clase_Enum.csprojAssemblyReference.cache
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Clases\Clase_Enum\obj\Debug\Clase_Enum.csproj.CoreCompileInputs.cache
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Clases\Clase_Enum\obj\Debug\Clase_Enum.exe
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Clases\Clase_Enum\obj\Debug\Clase_Enum.pdb

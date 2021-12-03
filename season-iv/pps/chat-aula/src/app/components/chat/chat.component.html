@@ -1,0 +1,14 @@
+<ion-content class="messageContent" #messageContent>
+    <!-- prettier-ignore -->
+    <div class="message" [ngClass]="{'right':  mensaje.name == me}" #message *ngFor="let mensaje of mensajes"  style="{{ style }}">
+        <p>{{ mensaje.name == me? ' ' : mensaje.name}}</p>
+        <span class="text">{{ mensaje.message }}</span>
+        <div class="hour">
+            <span>{{ mensaje.timestamp }}</span>
+        </div>
+    </div>
+</ion-content>
+<div class="inputmessage" #inputMensaje style="{{ style }}">
+    <input type="text" [(ngModel)]="mensaje" name="mensaje" maxlength="21" />
+    <button (click)="sendMessage()"><mat-icon>send</mat-icon></button>
+</div>

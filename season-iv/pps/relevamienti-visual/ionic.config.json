@@ -1,0 +1,7 @@
+{
+  "name": "relevamienti-visual",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

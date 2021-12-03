@@ -1,0 +1,215 @@
+/*.cuerpo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+  
+  }
+ */
+
+ /*@font-face{
+    font-family: IowanOldStyleBlack;
+    src: url('../../../assets/fonts/IowanOldStyleBlack.woff2');
+}*/
+
+.back{
+    position: fixed;
+    left: 0px;
+    bottom: 15px;
+    z-index: 999999;
+}
+
+
+ion-icon{
+    width: 30px;
+    height: 30px;
+}
+
+ion-content{
+    --ion-background-color: var(--ion-color-bordo);
+}
+
+ion-toolbar{
+    
+    text-align: right;
+    --ion-background-color: linear-gradient(to bottom right, #d38124, #c44d09);
+}
+
+ion-title{
+    text-align: center;
+    color:black;
+    font-size:large;
+    font-family: IowanOldStyleBlack;
+}
+
+.titleTab{
+    width:50%;
+    text-align: right;
+}
+
+.titleSubt{
+    width:50%;
+    text-align: right;
+}
+
+.sSubtotal{
+    font-size:20px;
+    color:white;
+    //background-color:rgb(112, 112, 112);
+    border-radius:3vh;
+    padding:1vh;
+}
+
+ion-item-divider{
+    min-height: 1vh!important;
+    color:white;
+}
+
+.tab{
+    
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+p{
+    padding-top: 5%;
+    color: black;
+    font-size: large;
+    text-align: center;
+    font-family: IowanOldStyleBlack;
+}
+label{
+    font-family: IowanOldStyleBlack;
+}
+
+.prod{
+    text-align:left;
+    display:flex;
+}
+
+.nombreProducto{
+    color:black;
+    margin-left:1vw;
+    font-size: 30px;
+}
+
+.precio{
+    color:green;
+    font-size: 20px;
+}
+
+img{
+    border-radius:2vw;
+    height:45vh;
+    width:45vh;
+}
+
+.plusminus{
+    --background: linear-gradient(to bottom right, #4395c4, #194ae9);
+    height:6vh;
+    width:6vh;  
+}
+
+.agregar{
+    margin-left:2vw;
+    height:6vh;
+    --background:linear-gradient(to bottom right, #4cf191, #033f17);
+    font-family: IowanOldStyleBlack;
+}
+
+.btnEnviar{
+    margin-left:2vw;
+    height:8vh;
+    --background: linear-gradient(to bottom right, #4cf191, #033f17);
+    font-family: IowanOldStyleBlack;
+}
+
+.cantidad{
+    margin-left:4vw;
+    margin-right:4vw;
+    font-size: 30px;
+    color:black;
+    margin-top:1vh;
+
+}
+
+ion-slides{
+    --bullet-background:white;
+    --bullet-background-active: var(--ion-color-bordo);
+}
+.footer-toolbar{
+    display: flex;
+    justify-content:space-evenly;
+    --ion-background-color: linear-gradient(to bottom right, #d38124, #c44d09);
+
+    ion-button{
+        width:23.8vw;
+    }
+}
+
+.vacio{
+    color:black;
+    font-size: x-large;
+    font-family: IowanOldStyleBlack;
+}
+
+.centrar{
+    text-align:center;
+}
+
+.centrarEnviado{
+    text-align:center;
+    margin-top:30vh;
+}
+
+.btnVolver{
+    margin-top:5vh;
+    margin-left:2vw;
+    height:10vh;
+    font-size:large;
+    width:80vw;
+    --background:linear-gradient(to bottom right, #4cf191, #033f17);
+    font-family: IowanOldStyleBlack;
+}
+
+@media screen and (orientation:landscape) {
+    ion-toolbar{
+        height:13vh; 
+    }
+
+    .btnVolver{
+        height:20vh;
+        width:60vw;
+    }
+
+    .centrarEnviado{
+        margin-top:10vh;
+    }
+
+    .agregar{
+        height:10vh;
+    }
+
+    .cantidad{
+        font-size: x-large;
+    }
+
+    img{
+        height:40vh;
+        width:40vh;
+        border-radius:3vw;
+    }
+
+    .plusminus{
+        height:10vh;
+        width:10vh;
+    }
+
+    .btnEnviar{
+        height:12vh;
+        width:40vw;
+    }
+}
+  

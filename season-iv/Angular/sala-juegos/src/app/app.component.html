@@ -1,0 +1,7 @@
+<sidenav></sidenav>
+<body>
+    <div class="mainPage">
+        <router-outlet></router-outlet>
+    </div>
+    <chat *ngIf="displayChat && loggedIn"></chat>
+</body>

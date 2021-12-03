@@ -1,0 +1,104 @@
+<app-glass-spiner *ngIf="sarasa"></app-glass-spiner>
+
+<body class="cont">
+    <form class="shadow">
+        <div class="messageContainer">
+            <h3>REGISTRO</h3>
+        </div>
+        <mat-form-field class="inputField">
+            <mat-label>@email</mat-label>
+            <input
+                matInput
+                type="text"
+                [(ngModel)]="email"
+                name="emailform"
+                required
+            />
+        </mat-form-field>
+
+        <mat-form-field class="inputField">
+            <mat-label>Contraseña</mat-label>
+            <input
+                matInput
+                type="password"
+                [(ngModel)]="password"
+                name="passwordForm"
+                required
+            />
+        </mat-form-field>
+
+        <mat-form-field class="inputField">
+            <mat-label>Validar Contraseña</mat-label>
+            <input
+                matInput
+                type="password"
+                [(ngModel)]="passwordConfirm"
+                name="passwordConfirmForm"
+                required
+            />
+        </mat-form-field>
+
+        <mat-form-field class="inputField">
+            <mat-label>Apellido</mat-label>
+            <input
+                matInput
+                type="text"
+                [(ngModel)]="apellido"
+                name="apellidoForm"
+                required
+            />
+        </mat-form-field>
+        <mat-form-field class="inputField">
+            <mat-label>Nombre</mat-label>
+            <input
+                matInput
+                type="text"
+                [(ngModel)]="nombre"
+                name="nombreForm"
+                required
+            />
+        </mat-form-field>
+        <mat-form-field class="inputField">
+            <mat-label>Dni</mat-label>
+            <input
+                matInput
+                type="text"
+                [(ngModel)]="dni"
+                name="dniForm"
+                required
+            />
+        </mat-form-field>
+        <button
+            mat-flat-button
+            class="fotobtn"
+            color="primary"
+            type="submit"
+            style="background-color: var(--main-theme-color)"
+            (click)="takePhoto()"
+        >
+            Foto
+        </button>
+        <div class="messageContainer">
+            <button
+                mat-flat-button
+                color="primary"
+                type="submit"
+                style="background-color: var(--main-theme-color)"
+                (click)="registrar()"
+            >
+                Registrar
+            </button>
+
+            <button
+                class="qr"
+                mat-flat-button
+                color="primary"
+                type="submit"
+                style="background-color: #027c21"
+                (click)="scanQr()"
+            >
+                <ion-icon name="qr-code-sharp"></ion-icon>
+            </button>
+        </div>
+    </form>
+</body>

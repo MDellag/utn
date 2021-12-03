@@ -1,0 +1,49 @@
+<div>
+    <spinner *ngIf="fetching"></spinner>
+    <form class="shadow" *ngIf="!fetching">
+        <div class="messageContainer">
+            <h3>REGISTER</h3>
+        </div>
+        <mat-form-field class="inputField">
+            <mat-label>@email</mat-label>
+            <input matInput type="text" [(ngModel)]="email" name="emailForm" />
+        </mat-form-field>
+
+        <mat-form-field class="inputField">
+            <mat-label>name</mat-label>
+            <input matInput type="text" [(ngModel)]="name" name="nameForm" />
+        </mat-form-field>
+
+        <mat-form-field class="inputField">
+            <mat-label>password</mat-label>
+            <input
+                matInput
+                type="password"
+                [(ngModel)]="password"
+                name="passwordForm"
+            />
+        </mat-form-field>
+
+        <mat-form-field class="inputField">
+            <mat-label>confirm password</mat-label>
+            <input
+                matInput
+                type="password"
+                [(ngModel)]="passwordConfirm"
+                name="passwordConfirmForm"
+            />
+        </mat-form-field>
+
+        <div class="messageContainer">
+            <button
+                mat-flat-button
+                type="submit"
+                style="background-color: var(--main-theme-light)"
+                (click)="register()"
+            >
+                > Register
+            </button>
+        </div>
+        <a [routerLink]="['/login']">Sign In</a>
+    </form>
+</div>

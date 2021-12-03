@@ -1,0 +1,33 @@
+div:hover,
+h1 {
+  background-color: brown;
+  color: aliceblue;
+  text-align: center;
+}
+
+.class1 {
+  background-color: #260353;
+  color: #ffffff;
+  border: 2px #ffffff;
+  text-align: center;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#IDelement {
+  color: #056e05;
+  font-style: oblique;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    text-decoration: double;
+    margin: auto; /* no hace nada esperado aca*/
+}
+
+a[href*="twitter"] {
+  color: #ffffff;
+}
+
+div a{
+    /*todos los A dentro de los divs. Buscar PseudoElemento*/
+    color: yellow;
+}

@@ -1,0 +1,29 @@
+<div class="contChart">
+    <canvas
+        baseChart
+        [data]="pieChartData"
+        [labels]="pieChartLabels"
+        [chartType]="pieChartType"
+        [options]="pieChartOptions"
+        [plugins]="pieChartPlugins"
+        [legend]="pieChartLegend"
+        [colors]="donutColors"
+        (chartClick)="openDialog($event)"
+    >
+    </canvas>
+</div>
+<div class="buttons">
+    <button class="impuestos" (click)="changeToImpuestos()">Impuestos</button>
+    <button class="alimentos" (click)="changeToAlimentos()">Alimentos</button>
+    <button class="servicios" (click)="changeToServicios()">Servicios</button>
+    <button class="medicina" (click)="changeToMedicina()">Medicina</button>
+</div>
+<button
+    mat-flat-button
+    color="primary"
+    type="submit"
+    style="background-color: var(--main-theme-color)"
+    (click)="back()"
+>
+    Volver
+</button>

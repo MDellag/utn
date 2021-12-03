@@ -1,0 +1,37 @@
+<div class="choseContainer">
+    <mat-form-field appearance="fill">
+        <mat-label>Idioma</mat-label>
+        <mat-select
+            [formControl]="toppings"
+            (selectionChange)="changeBtn(toppings.value)"
+        >
+            <mat-select-trigger>
+                <b> {{toppings.value ? toppings.value : ''}}</b>
+            </mat-select-trigger>
+            <mat-option *ngFor="let topping of toppingList" [value]="topping"
+                >{{topping}}</mat-option
+            >
+        </mat-select>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+        <mat-label>Tema</mat-label>
+        <mat-select
+            [formControl]="temas"
+            (selectionChange)="changeBtn(temas.value)"
+        >
+            <mat-select-trigger>
+                <b>{{temas.value ? temas.value : ''}}</b>
+            </mat-select-trigger>
+            <mat-option *ngFor="let tema of temaList" [value]="tema"
+                >{{tema}}</mat-option
+            >
+        </mat-select>
+    </mat-form-field>
+
+    <button class="btn1" (click)="playSound1()">{{btn1}}</button>
+    <button class="btn2" (click)="playSound2()">{{btn2}}</button>
+    <button class="btn3" (click)="playSound3()">{{btn3}}</button>
+    <button class="btn4" (click)="playSound4()">{{btn4}}</button>
+    <button class="btn5" (click)="playSound5()">{{btn5}}</button>
+</div>

@@ -1,0 +1,22 @@
+export const ERRORS: { [key: string]: string } = {
+  INVALID_EMAIL: 'Ingrese un email valido!',
+  INVALID_DNI: 'Ingrese un DNI valido!',
+  INVALID_NAME: 'Ingrese un nombre valido!',
+  INVALID_LASTNAME: 'Ingrese un apellido valido!',
+  INVALID_PASSWORD: 'Contraseña incorrecta o no coinciden!',
+  INVALID_PASSWORD_LENGTH: 'La contraseña debe ser almenos 6 caracteres',
+  INVALID_TYPEUSER: 'Tipo de Usuario vacio!',
+  INVALID_OBRASOCIAL: 'Obra social invalida!',
+  INVALID_ESPECIALIDAD: 'Ingrese una especialidad',
+  INVALID_ESPECIALIDAD_OTHER: 'Debe especificar la especialidad',
+  INVALID_PHOTO: 'Debe seleccionar una foto de perfil!',
+  INVALID_PHOTO_LENGTH: 'Debe seleccionar 2 fotos de perfil',
+  ERROR_LOGIN: 'Usuario o Contraseña invalidos!',
+  EMAIL_ALREADY_TAKEN: 'Email ya en uso!',
+  EMAIL_OR_DNI_ALREADY_TAKEN: 'Email o Dni ya se encuentra registrado',
+  USER_DISABLED: 'Usuario aun pendiente de aprovacion :(',
+  NOT_VALIDATED_ACCOUNT: 'Email aun no verificado!',
+  UNRESOLVED_CAPTCHA: 'Debes resolver el captcha para continuar!',
+  WRONG_EMAIL_PASSWORD:
+    'Email o password invalidos, reingrese sus credenciales',
+}

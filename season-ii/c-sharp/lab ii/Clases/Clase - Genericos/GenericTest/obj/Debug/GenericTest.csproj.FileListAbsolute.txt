@@ -1,0 +1,7 @@
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Clases\Clase - Genericos\GenericTest\bin\Debug\GenericTest.exe.config
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Clases\Clase - Genericos\GenericTest\bin\Debug\GenericTest.exe
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Clases\Clase - Genericos\GenericTest\bin\Debug\GenericTest.pdb
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Clases\Clase - Genericos\GenericTest\obj\Debug\GenericTest.csprojAssemblyReference.cache
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Clases\Clase - Genericos\GenericTest\obj\Debug\GenericTest.csproj.CoreCompileInputs.cache
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Clases\Clase - Genericos\GenericTest\obj\Debug\GenericTest.exe
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Clases\Clase - Genericos\GenericTest\obj\Debug\GenericTest.pdb

@@ -1,0 +1,79 @@
+<app-spinner *ngIf="isFetchingData"></app-spinner>
+<body class="container">
+  <ion-fab horizontal="end" vertical="top" slot="fixed">
+    <ion-fab-button color="dark">
+      <ion-icon name="person-circle-outline"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list style="margin-top: 110%;">
+      <ion-fab-button color="light" (click)="insertarDatos('Supervisor')">
+        <p style="font-family: 'Open Sans', sans-serif;">SUP</p>
+      </ion-fab-button>
+      <ion-fab-button color="danger" (click)="insertarDatos('Cocinero')">
+        <p style="font-family: 'Open Sans', sans-serif;">COC</p>
+      </ion-fab-button>
+      <ion-fab-button color="light" (click)="insertarDatos('Bartender')">
+        <p style="font-family: 'Open Sans', sans-serif;">BAR</p>
+      </ion-fab-button>
+      <ion-fab-button color="danger" (click)="insertarDatos('Mozo')">
+        <p style="font-family: 'Open Sans', sans-serif;">MOZO</p>
+      </ion-fab-button>
+      <ion-fab-button color="light" (click)="insertarDatos('Metre')">
+        <p style="font-family: 'Open Sans', sans-serif;">MET</p>
+      </ion-fab-button>
+      <ion-fab-button color="danger" (click)="insertarDatos('Cliente')">
+        <p style="font-family: 'Open Sans', sans-serif;">CLI</p>
+      </ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+  <form class="shadow">
+    <div class="messageContainer">
+      <h3>INGRESO</h3>
+    </div>
+    <mat-form-field class="inputField">
+
+      <mat-label>@correo</mat-label>
+      <input
+        matInput
+        type="text"
+        [(ngModel)]="correo"
+
+        name="usernameForm"
+        required
+      />
+    </mat-form-field>
+
+    <mat-form-field class="inputField">
+      <mat-label>Contraseña</mat-label>
+      <input
+        matInput
+        type="password"
+        [(ngModel)]="password"
+        name="passwordForm"
+        required
+      />
+    </mat-form-field>
+
+    <div class="messageContainer">
+      <button
+        mat-flat-button
+        color="primary"
+        type="submit"
+        style="background: linear-gradient(to bottom right, #d38124, #c44d09);"
+        (click)="logInUser()"
+      >
+        Ingresar
+      </button>
+      <button
+        mat-flat-button
+        color="primary"
+        type="submit"
+        style="background: linear-gradient(to bottom right, #d38124, #c44d09);; margin-top: 10px;"
+        (click)="ingresoAnonimo()"
+      >
+        Ingreso Anonimo
+      </button>
+    </div>
+    <a [routerLink]="['/register']">Registrarse</a>
+  </form>
+</body>
+<router-outlet></router-outlet>

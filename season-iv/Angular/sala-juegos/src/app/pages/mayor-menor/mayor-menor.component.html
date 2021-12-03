@@ -1,0 +1,16 @@
+<div class="gameBox">
+    <div class="numberContainer">
+        <span>{{ displayedNumber }}</span>
+    </div>
+
+    <div class="buttonsSelect">
+        <button class="higher" (click)="bet('higher')">
+            <i class="bx bxs-chevrons-up ic"></i>
+        </button>
+        <button class="lower" (click)="bet('lower')">
+            <i class="bx bx-chevrons-down ic"></i>
+        </button>
+    </div>
+</div>
+
+<span class="score">Score: {{ score }}</span>

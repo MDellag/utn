@@ -1,0 +1,39 @@
+<mat-accordion class="cont">
+    <h3>Historia Clinica</h3>
+    <br />
+    <button
+        type="button"
+        class="btn btn-danger"
+        (click)="downloadPdf()"
+        *ngIf="user.type === 'PATIENT'"
+    >
+        Descargar PDF
+    </button>
+    <br />
+    <mat-expansion-panel hideToggle *ngFor="let hist of historyList">
+        <mat-expansion-panel-header>
+            <mat-panel-title> {{ hist.id | unixToDay }} </mat-panel-title>
+
+            <mat-panel-description>
+                Datos de la consulta
+            </mat-panel-description>
+        </mat-expansion-panel-header>
+
+        <p>
+            Altura: <b>{{ hist.altura }}m</b>
+        </p>
+        <p>
+            Peso: <b>{{ hist.peso }}kg</b>
+        </p>
+        <p>
+            Temperatura: <b>{{ hist.temperatura }}°C</b>
+        </p>
+        <p>
+            Presion: <b>{{ hist.presion }}</b>
+        </p>
+        <p *ngFor="let item of hist.extra | keyvalue">
+            {{ item.key }}: <b>{{ item.value }}</b>
+        </p>
+    </mat-expansion-panel>
+    <p *ngIf="!historyList.length">Aun no cuenta con Historia Clinica!</p>
+</mat-accordion>

@@ -1,0 +1,54 @@
+.contCanvas{
+    
+    position: relative;
+    margin: auto;
+    margin-bottom: 10px;
+    text-align: center;
+   
+    
+    
+}
+
+.cuerpo{
+    width: 100%;
+    height: 100%;
+    //background: rgb(255, 64, 160)
+    //background: rgb(64, 179, 255)
+}
+
+ion-button{
+    --background: linear-gradient(to bottom right, #6db7e2, #002dc2);
+    font-size: 20px;
+}
+
+ion-header{
+    --ion-background-color: linear-gradient(to bottom right, #d38124, #c44d09);
+    text-align: center;
+    --ion-font-family: "IowanOldStyleBlack";
+    
+}
+
+ion-footer{
+    --ion-background-color: linear-gradient(to bottom right, #d38124, #c44d09);
+    text-align: center;
+    align-items: center;
+
+}
+
+ion-title{
+    color: white;
+    font-size: 25px;
+    font-style: italic;
+}
+
+ion-content{
+    background: url("../../../assets/images/sativa.jpg") no-repeat center / cover;
+}
+
+.label{
+    margin-top: 10px;
+    font-size: 20px;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}

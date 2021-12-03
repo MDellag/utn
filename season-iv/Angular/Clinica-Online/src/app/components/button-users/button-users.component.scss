@@ -1,0 +1,43 @@
+.userBtns {
+  display: flex;
+  justify-content: center;
+
+  flex-wrap: wrap;
+  width: 100%;
+
+  input {
+    display: inline;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+    width: 250px;
+    height: 75px;
+  }
+
+  img {
+    width: 80px;
+    height: 50px;
+  }
+
+  .btnUsers {
+    margin: 4px;
+  }
+}
+
+.contRoundBtn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .roundBtn {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+    }
+  }
+}

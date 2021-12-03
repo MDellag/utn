@@ -1,0 +1,57 @@
+position: relative; left: 50px  -hace referencia a que ahora la posicion del componente no es static y podemos moverla
+          absolute; left: 100px - hace que el componente se ubique en otro lugar, permitiendo dejar el lugar al proximo componente
+          sticky;   top: 0px    - hace que el component se quede pegado al a pantalla, permitiendo scrollear y que no se esconda
+
+          flex-wrap:          - que nos respete el ancho y el alto de la resolucion de pantalla
+          flex-direction: row;
+          justify-content: center;  -centra todos los elementos o permite distribuirlos de manera ordenada buscar arguementos
+          
+
+          googlear FlexFroggy/FlexTower es un juego para aprender Flex
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .contenido{
+            background-color: #7f2a99;
+            width: 200px;
+            height: 200px;
+            border: 10px solid black;
+            /*display: inline;  esto hace que el componente ocupe el tamaño del contenido*/ 
+            
+        }
+
+        .contenedor{
+            
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        div:nth-of-type(odd){
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contenedor">
+        <div class="contenido"></div>
+        <div class="contenido"></div>
+        <div class="contenido"></div>
+        <div class="contenido"></div>
+        <div class="contenido"></div>
+        <div class="contenido"></div>
+    </div>
+    <div class="contenido" style="position: relative; left: 100px;"></div>
+    <div class="contenido" style="background-color: #fbac12; position: sticky; top: 0px;"></div>
+    <div class="contenido"></div>
+    <div class="contenido"></div>
+    <div class="contenido"></div>
+    <div class="contenido"></div>
+    
+</body>
+</html>

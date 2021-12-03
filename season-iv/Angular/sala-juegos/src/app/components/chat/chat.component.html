@@ -1,0 +1,29 @@
+<div class="chat shadow">
+    <h3>CHAT</h3>
+
+    <spinner *ngIf="messages.length == 0 && fetching"></spinner>
+    <div class="empty-container" *ngIf="messages.length == 0 && !fetching">
+        <span class="chat-empty">There are no messages..</span>
+    </div>
+    <div class="message-container">
+        <div class="message" *ngFor="let message of messages">
+            <h4>{{ message.name }}</h4>
+            <p>{{ message.message }}</p>
+            <span class="time-right" formatHour>{{ message.date }}</span>
+        </div>
+    </div>
+
+    <div class="send">
+        <input
+            type="text"
+            [(ngModel)]="message"
+            name="messageName"
+            placeholder="write a message.."
+            (keydown)="sendMessageOnEnter($event)"
+        />
+
+        <button class="sendbtn" mat-flat-button (click)="sendMessage()">
+            <i class="bx bxs-send icon-color"></i>
+        </button>
+    </div>
+</div>

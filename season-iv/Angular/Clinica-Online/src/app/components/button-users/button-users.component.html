@@ -1,0 +1,32 @@
+<div class="userBtns" *ngIf="users && !rounded">
+    <div class="btnUsers roundBtn" *ngFor="let user of users">
+        <input
+            type="radio"
+            class="btn-check"
+            name="btnradio"
+            id="{{ user.name }}"
+            autocomplete="off"
+            (change)="emitSelectedUser(user)"
+        />
+
+        <label class="btn btn-outline-primary" for="{{ user.name }}">
+            <img appBrokenImage [src]="user.photo" alt="profilePhoto" />
+            {{ user.name }}</label
+        >
+    </div>
+</div>
+<div class="userBtns" *ngIf="users && rounded">
+    <div class="btnUsers contRoundBtn" *ngFor="let user of users">
+        <button type="button" class="btn btn-success roundBtn">
+            <img
+                [src]="user.photo[0]"
+                alt="userphoto"
+                appBrokenImage
+                (click)="emitSelectedUser(user)"
+            />
+        </button>
+        <p>
+            <b>{{ user.name }} {{ user.lastname }}</b>
+        </p>
+    </div>
+</div>

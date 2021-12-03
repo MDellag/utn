@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.game {
+  background-image: url('/assets/images/forest.png');
+  width: 904px;
+  height: 285px;
+  border: 1px solid black;
+  margin: auto;
+
+  span {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 30px;
+    position: absolute;
+    left: 40%;
+    top: 15%;
+    color: #fff;
+  }
+}
+
+.ninja {
+  width: 100px;
+  height: 100px;
+
+  background-image: url('/assets/images/standNinja.png');
+  background-size: 100px 100px;
+  position: relative;
+  top: 180px;
+}
+
+.enemy {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  top: 90px;
+  left: 830px;
+
+  background-image: url('/assets/images/monster.png');
+  background-size: 100px 100px;
+}
+
+.score {
+  display: block;
+  text-align: center;
+
+  font-family: 'Press Start 2P', cursive;
+  font-size: 72px;
+  background: rgb(212, 77, 14);
+  background: linear-gradient(
+    90deg,
+    rgba(156, 59, 14, 1) 0%,
+    rgba(213, 104, 14, 1) 35%,
+    rgba(212, 77, 14, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.playing {
+  animation: block 1s infinite linear;
+}
+
+.jump {
+  animation: jump 0.3s linear;
+  background-image: url('/assets/images/jumpNinja.png') !important;
+}
+
+@keyframes block {
+  0% {
+    left: 830px;
+  }
+  100% {
+    left: -20px;
+  }
+}
+
+@keyframes jump {
+  0% {
+    top: 180px;
+  }
+
+  30% {
+    top: 70px;
+  }
+
+  50% {
+    top: 10px;
+  }
+
+  80% {
+    top: 70px;
+  }
+
+  100% {
+    top: 180px;
+  }
+}

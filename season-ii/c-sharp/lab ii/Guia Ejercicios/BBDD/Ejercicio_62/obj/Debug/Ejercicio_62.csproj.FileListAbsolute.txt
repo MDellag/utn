@@ -1,0 +1,6 @@
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\BBDD\Ejercicio_62\bin\Debug\Ejercicio_62.dll
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\BBDD\Ejercicio_62\bin\Debug\Ejercicio_62.pdb
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\BBDD\Ejercicio_62\obj\Debug\Ejercicio_62.csprojAssemblyReference.cache
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\BBDD\Ejercicio_62\obj\Debug\Ejercicio_62.csproj.CoreCompileInputs.cache
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\BBDD\Ejercicio_62\obj\Debug\Ejercicio_62.dll
+C:\Users\Nehl\Google Drive\Dev\UTN\Season II\Programacion II\Guia Ejercicios\BBDD\Ejercicio_62\obj\Debug\Ejercicio_62.pdb

@@ -1,0 +1,78 @@
+
+<ion-header class = "ionHeader">
+  <ion-toolbar>
+    
+    <ion-title>
+      <div style="display:flex">
+        <div class="titleTab">
+          {{tab}}
+        </div>
+        
+      </div>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content #content>
+  
+    <div class="tab" *ngIf="tab == 'MOZO'">
+      
+      <button class="btnLiberarMesaUno" (click)="liberarMesa('MESA1')">LIBERAR MESA 1</button>
+      <button class="btnLiberarMesaDos" (click)="liberarMesa('MESA2')">LIBERAR MESA 2</button>
+      <button class="btnListaPagos" (click)="listaPagos()">PAGOS PENDIENTES </button>
+      <button class="btnConsulta" (click)="irConsultas()">CONSULTAS</button>
+    </div>
+
+    <div class="tab" *ngIf="tab == 'PENDIENTES'">
+      
+      
+        <li *ngFor="let item of pedidos; index as i">
+          <p class="item">{{ i + 1 }}/{{ pedidos.length }} - {{ item.nombre}} - cantidad: {{ item.cantidad }} - mesa: {{item.mesa}} </p>
+          <div class="yesno">
+            <p class="confirmar" (click)="confirmPedido(item)">confirmar</p>
+            <p class="rechazar" (click)="cancelPedido(item)">rechazar</p>
+          </div>
+        </li>
+
+        
+      
+      
+    </div>
+
+    <div class="tab" *ngIf="tab == 'REALIZADOS'">
+      <li *ngFor="let item of pedidosAEntregar; index as i">
+        <p class="item">{{ i + 1 }}/{{ pedidos.length }} - {{ item.nombre}} - cantidad: {{ item.cantidad }} - mesa: {{item.mesa}}</p>
+        <div class="yesno">
+          <p class="confirmar" (click)="entregarPedido(item)">Entregar</p>
+          <p class="rechazar" (click)="cancelPedido(item)">Devolver</p>
+        </div>
+      </li>
+    </div>
+
+    
+</ion-content>
+
+<app-spinner *ngIf="spinner"></app-spinner>
+
+
+<!--TABS FOOTER-->
+<ion-footer class="ion-no-border">
+  <ion-toolbar class="footer-toolbar">
+    <ion-button (click)="cambiarTab('MOZO')" fill="clear" color="bordo">
+      <!--ion-label>Comidas</ion-label-->
+      <ion-icon name="person-outline"></ion-icon>
+    </ion-button>
+
+    <ion-button (click)="cambiarTab('PENDIENTES')" fill="clear" color="bordo">
+      <!--ion-label>Bebidas</ion-label-->
+      <ion-icon name="fast-food-outline"></ion-icon>
+    </ion-button>
+
+    <ion-button (click)="cambiarTab('REALIZADOS')" fill="clear" color="bordo">
+      <!--ion-label>Postres</ion-label-->
+      <ion-icon name="checkmark-outline"></ion-icon>
+    </ion-button>
+
+  </ion-toolbar>
+</ion-footer>
+

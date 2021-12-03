@@ -1,0 +1,15 @@
+
+function getAnuncios() {
+  let dat;
+  fetch("http://localhost:3000/anuncios")
+    .then((resp) => {
+      return !resp.ok ? Promise.reject() : resp.json();
+    })
+    .then(data =>{
+      listaVehiculos = data;
+      sleep(updateList)
+    })
+    .catch((error) => {
+      console.error(error);
+    });
+}
